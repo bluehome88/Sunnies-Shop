@@ -1,0 +1,11 @@
+#tbcmsdesktop-main-menu .tbcmsmain-menu-wrapper .tb-header-menu[data-depth="0"] > li > .tbmenu-link-wrapper a span,
+.tbcms-main-title .tbmain-title h2,
+.tbapp-logo-content-inner .tbdekstop-footer-all-title-wrapper .tbfooter-title span,
+.tbleft-right-title.facet-label, 
+.block-categories .category-top-menu > li.tb-category-title-wrapper a,
+.tball-page-top-title h1, 
+#main .tbpage-header-title-wrapper h1,
+.tbbanner-content-wrapper h4 {
+    font-family: 'Cabin', sans-serif;
+}
+

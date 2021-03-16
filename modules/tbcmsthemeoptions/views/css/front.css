@@ -1,0 +1,282 @@
+/**
+* 2007-2019 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2019 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*/
+
+
+/***********************START THEME_CONTOL*****************/
+.tbcmstheme-control .tbtheme-option{
+    border: 2px solid #e6e6e6;
+    margin: 0;
+}
+.tbcmstheme-control{
+    position: fixed;
+    z-index: 100;
+    top:80px;
+    left: -300px;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.tbcmstheme-control.open {
+    left: 0;
+    right: auto;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.tbcmstheme-control table{
+    width: 100%;
+}
+.tbcmstheme-control .tbtheme-control-wrapper.open{
+    display: block;
+}
+.tbcmstheme-control .tbtheme-control-icon i{
+    font-size: 24px;
+    color: #ffffff;
+    position: relative;
+    top: -2px;
+    height: 45px;
+    line-height: 45px;
+   
+}
+.tbcmstheme-control .tbtheme-control-icon:hover i{
+    color: #222222;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.tbcmstheme-control .tbtheme-control-wrapper .tbselect-theme select,
+.tbcmstheme-control .tbtheme-control-wrapper .tbselect-title-font-1-select select{
+    padding: 0;
+    width: 165px;
+    font-size: 12px;
+    height: 30px;
+    border: 1px solid #e6e6e6;
+}
+.tbcmstheme-control .tbtheme-control-wrapper .tbselect-theme select:focus,
+.tbcmstheme-control .tbtheme-control-wrapper .tbselect-title-font-1-select select:focus{
+    outline: none;
+}
+.tbcmstheme-control .tbtheme-control-wrapper{
+    width:250px;
+    height: auto;
+    padding:15px 30px;
+    background-color: #fafafc;
+    overflow: hidden;
+    border-radius: 0 7px 7px 7px;
+    box-shadow: 0 14px 27px rgba(0,0,0,.1);
+    display: block;
+}
+#order-confirmation .tbcmstheme-control .tbtheme-control-wrapper table td{
+    border: none;
+}
+
+
+.tbcmstheme-control.active {
+    right: 0;
+} 
+
+.tbtheme-control-wrapper{
+    color: #222222;
+}
+.tbtheme-control-wrapper .tbselect-theme-name,
+.tbtheme-control-wrapper .tbcolor-theme-name,
+.tbtheme-control-wrapper .tbtheme-layout-name,
+.tbtheme-control-wrapper .tbtheme-animation-name,
+.tbtheme-control-wrapper .tbtheme-page-loader-name,
+.tbtheme-control-wrapper .tbtheme-left-sticky-name,
+.tbtheme-control-wrapper .tbtheme-right-sticky-name,
+.tbtheme-control-wrapper .tbtheme-menu-sticky-name,
+.tbtheme-control-wrapper .tbbgcolor-theme-name,
+.tbtheme-control-wrapper .tbtheme-background-pattern-name{
+    font-size: 12px;
+}
+
+.tbtheme-control-wrapper .tbtheme-color-box{
+    float: left;
+}
+.tbtheme-control-wrapper .tbtheme-color-box input{
+    width: 165px;
+}
+.tbtheme-control-wrapper .tball-theme-content{
+    margin-bottom: 15px;
+}
+
+
+.tbtheme-control-wrapper .tbtheme-color-one{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.tbtheme-control-wrapper td{
+    padding:4px 0;
+}
+.tbtheme-control-wrapper .tbtheme-option .btn-primary{
+    background-color: #222222;
+    color: #FFF;
+    text-align: center;
+    border: none;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+}
+.tbtheme-control-wrapper .tbtheme-option .btn-default{
+    background-color: #888;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+    border: none;
+    text-transform: uppercase;
+}
+.tbtheme-control-wrapper .tbtheme-option .toggle-handle{
+    background-color: #FFF;
+    padding: 0px 20px;
+}
+.tbtheme-control-wrapper .tbtheme-color-box input{
+    border:none;
+    height: 25px;
+    padding: 0 32px;
+    border: 1px solid #e6e6e6;
+    font-size: 12px;
+}
+.tbtheme-control-wrapper .tbtheme-control-title-name{
+    float: left;
+}
+.tbtheme-control-wrapper .tbtheme-control-reset{
+    background-color:#999;
+    margin-bottom: 5px;
+    border: none;
+    color: #FFF;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border:1px solid #eee;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.tbtheme-control-title-name-reset-btn{
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+.tbtheme-control-title-name-reset-btn p{
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    color: #222222;
+}
+.tbtheme-control-wrapper .tbtheme-control-reset:focus{
+    outline: none;
+}
+.tbtheme-control-wrapper .tbtheme-all-pattern-wrapper,
+.tbtheme-all-body-pattern{
+    width: 185px;
+}
+
+.tbtheme-control-wrapper .tbtheme-all-pattern,
+.tbtheme-all-body-pattern-wrapper .tbtheme-all-body-pattern{
+    width: 22px;
+    height: 22px;
+    background-color: #FFF;
+    float: left;
+    margin: 0 5px 5px 0;
+    cursor: pointer;
+}
+.tbtheme-control-wrapper .tbtheme-all-pattern .tbtheme-pattern-image:hover,
+.tbtheme-control-wrapper .tbtheme-all-pattern .tbtheme-pattern-image.active,
+.tbtheme-all-body-pattern .tbtheme-body-pattern-image:hover,
+.tbtheme-all-body-pattern .tbtheme-body-pattern-image.active{
+    border: 2px solid #909090;
+}
+.tbtheme-control-wrapper .tbtheme-all-pattern .tbtheme-pattern-image,
+.tbtheme-all-body-pattern .tbtheme-body-pattern-image {
+    width: 22px;
+    height: 22px;
+    border:1px solid #eeeeee;
+}
+.tbcms_theme_active{
+    border: 2px solid #f00 ;
+}
+.tbtheme-control-wrapper .tbtheme-bgcolor-box input{
+    width: 165px;
+    border: 1px solid #e6e6e6;
+    height: 25px;
+    padding: 0 32px;
+    font-size: 12px;
+}
+.tbtheme-background-patten p.notice{
+    font-size: 10px;
+    display: block;
+    float: left;
+}
+.tbtheme-left-sticky {
+    display: none;
+}
+.tbtheme-control-wrapper .tbtheme-option .toggle-off.btn {
+    padding: 8px 0 8px 20px;
+}
+.tbtheme-control-wrapper .tbtheme-option .toggle-on.btn {
+    padding: 8px 20px 8px 0px;
+}
+@media (max-width: 767px){
+        .tbcmstheme-control{
+            display: none;
+        }
+}
+
+/*.tbtheme-color-two{
+    display: none !important;
+}*/
+
+.tbtheme-control-wrapper .tbtheme-control-reset:hover {
+    background-color: #222222;
+}
+.tbcmstheme-control .tbtheme-background-patten p.notice {
+    color: #222222;
+    margin-bottom: 0;
+}
+.lang-rtl  .tbtheme-control-wrapper .tbtheme-color-box ,
+.lang-rtl .tbtheme-control-wrapper .tbtheme-all-pattern {
+    float: right;
+}
+/***********************END THEME_CONTOL*****************/

@@ -1,0 +1,197 @@
+/************************************************** desktop search ***************************/
+#header .header-top .search-widget {
+	float: left;
+	min-width: auto;
+}
+.tbcmsheader-search.search-widget form input[type=text] {
+	border: none;
+}
+.tbcmsheader-search .tbcms-select-category {
+	display: none;
+}
+#header .tbsearch-header-display-wrappper {
+	position: absolute;
+	right: 0;
+	top: 100%;
+	z-index: 3;
+	opacity: 0;
+   	visibility: hidden;
+	-webkit-transform: translateY(20px);
+	-o-transform: translateY(20px);
+	-ms-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	transform: translateY(20px);
+	-webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.lang-rtl #header .tbsearch-header-display-wrappper{
+	right: auto;
+	left: 0;
+}
+#pagenotfound .page-not-found .search-widget .tbsearch-header-display-wrappper{
+	position: inherit;
+	opacity: 1;
+	visibility: visible;
+	transform: none;
+}
+.tbsearch-top-wrapper.open .tbsearch-header-display-wrappper {
+	display: block;
+}
+
+.tbsearch-top-wrapper .tbsearch-close i {
+	display: none;
+}
+.tbsearch-top-wrapper.open .tbsearch-close {
+	display: block;
+}
+.tbsearch-top-wrapper.open .tbheader-search-display-icon {
+	display: none;
+}
+.tbsearch-header-display-wrappper form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	z-index: 10;
+    border: 1px solid #eee;
+}
+.tbheader-top-search-wrapper {
+	background-color: #ffffff;
+}
+.search-widget form button[type=submit]{
+    cursor: pointer;
+}
+.tbcmsheader-search.search-widget form button[type=submit] {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	top: 0;
+	position: inherit;
+}
+.tbcmssearch-wrapper {
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+#_desktop_search .tbcmsheader-search .tbserach-name {
+	display: none;
+}
+.tbcmsheader-search form input::placeholder{
+	opacity: 1;
+}
+/* search result */
+.tbsearch-dropdown-total-wrapper {
+    text-align: center;
+    margin: 0 0 15px 0;
+    line-height: 40px;
+    border: 1px solid #eeeeee;
+    padding: 0 15px;
+}
+.tbsearch-result {
+	background-color: #ffffff;
+	position: absolute;
+	width: 100%;
+	z-index: 20;
+	top: 100%;
+	margin-top: 10px;
+}
+.tbsearch-header-display-wrappper{
+	position: relative;
+}
+.tbsearch-result .product-price-and-shipping{
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: top;
+	margin: 0;
+}
+.tbcmssearch-dropdown{
+	padding: 15px;
+	border: 1px solid #eeeeee;
+}
+.tbsearch-all-dropdown-wrapper {
+	overflow: hidden;
+}
+.tbsearch-dropdown-wrapper {
+	margin-bottom: 15px;
+}
+.tbsearch-dropdown-img-block {
+    float: left;
+    height: 70px;
+    width: 70px;
+    border: 1px solid #eeeeee;
+    overflow: hidden;
+}
+.tbsearch-dropdown-content-box {
+    margin-left: 85px;
+}
+.tbsearch-dropdown-title {
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.tbsearch-dropdown-price .tbsearch-dropdown-new-price,
+.tbsearch-dropdown-price .tbsearch-dropdown-old-price {
+	float: left;
+	margin-right: 10px;
+}
+.tbsearch-dropodwn-close-wrapper{
+	margin-bottom: 35px;
+}
+.tbheader-top-search{
+	width: 100%;
+}
+.tbsearch-dropdown-close {
+	border: 1px solid #eeeeee;
+	text-align: center;
+	padding: 10px 15px;
+	margin-bottom: 15px;
+}
+.tbsearch-more-search {
+	border: 1px solid #eeeeee;
+	text-align: center;
+	padding: 10px 15px;
+	cursor: pointer;
+	/*display: inline-block;*/
+}
+#header .tbsearch-header-display-wrappper.open{
+	opacity: 1;
+    visibility: visible;
+	-webkit-transform: translateY(0);
+	-o-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+   	-webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/************* mobile search css ************/
+
+@media(max-width: 575px){
+	.tbcmssearch-wrapper {
+     	position: inherit;     
+	}
+	.search-widget form input[type=text] {
+    	min-width: auto;
+	}
+}
+/************************ rtl **************/
+.lang-rtl .tbsearch-dropdown-total {
+    direction: ltr;
+}
+.lang-rtl .tbsearch-dropdown-img-block {
+	float: right;
+}
+.lang-rtl .tbsearch-dropdown-content-box {
+    margin-right: 85px;
+    margin-left: 0;
+}
+.lang-rtl .tbsearch-dropdown-price .tbsearch-dropdown-new-price, 
+.lang-rtl .tbsearch-dropdown-price .tbsearch-dropdown-old-price {
+    float: right;
+    margin-left: 5px;
+}

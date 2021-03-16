@@ -1,0 +1,11 @@
+.tbcms-main-title .tbmain-title h2,
+.tbleft-right-title.facet-label, 
+.block-categories .category-top-menu > li.tb-category-title-wrapper a,
+.block_newsletter .tbnewsletter-title, 
+.tbapp-logo-content-inner .tbdekstop-footer-all-title-wrapper .tbfooter-title span,
+.tbfooter-title-wrapper .tbfooter-title, 
+.tbdekstop-footer-all-title-wrapper .tbfooter-title,
+#right-column .tbservices-content-box .tbservices-title,
+.tbcategory-slider-title{
+    color: #customTitleColor;
+}

@@ -1,0 +1,404 @@
+/**
+* 2007-2019 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author PrestaShop SA <contact@prestashop.com>
+*  @copyright  2007-2019 PrestaShop SA
+*  @version  Release: $Revision$
+*  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*/
+
+/**************** Start Nivo Slider Css  ****************************************/
+.nivoSlider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+.nivoSlider img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: none;
+}
+.nivo-main-image {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 6;
+    display: none;
+    background: white;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    top: 0;
+}
+.nivo-box {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+}
+.nivo-box img {
+    display: block;
+}
+/* Caption styles */
+.nivo-caption {
+  position:absolute;
+  top: 50%;
+  left:0px;
+  bottom:0px;
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  max-width:100%;
+  z-index:8;
+  opacity:1;
+  display: none;
+  -moz-opacity:1;
+  filter:alpha(opacity=1);
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;   
+}
+.nivo-caption p {
+    margin: 0;
+}
+.nivo-caption a {
+    display: inline !important;
+}
+.nivo-html-caption {
+    display: none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+    position: absolute;
+    top: 45%;
+    z-index: 9;
+    cursor: pointer;
+}
+.nivo-prevNav {
+    left: 0px;
+}
+.nivo-nextNav {
+    right: 0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+    text-align: center;
+    padding: 15px 0;
+    display: none;
+}
+.nivo-controlNav a {
+    cursor: pointer;
+}
+.nivo-controlNav a.active {
+    font-weight: bold;
+}
+
+
+/********************************* tbcmsslider *************************/
+.tbcmsmain-slider-wrapper {
+  position: relative;
+}
+.tbmain-slider-contant {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: auto;
+  max-width: 60%;
+}
+.tbmain-slider-contant.tbmain-slider-contant-left {
+  left: 8%;
+  text-align: left;
+  right: auto;
+  top: 0;
+}
+.tbmain-slider-contant.tbmain-slider-contant-right {
+  right: 8%;
+  text-align: right;
+  left: auto;
+  top: 0;
+}
+.tbmain-slider-contant.tbmain-slider-contant-center {
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 0;
+  max-width: 100%;
+}
+.tbmain-slider-contant.tbmain-slider-contant-none {
+  display: none;
+}
+.tbmain-slider-contant .tbmain-slider-title {
+    font-size: 35px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+.tbmain-slider-contant .tbmain-slider-info h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+.tbmain-slider-contant .tbmain-slider-info p {
+    font-size: 16px;
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    color: #222222;
+}
+
+.tbmain-slider-contant .tbmain-slider-button {
+  border: 1px solid #222222;
+  background-color: transparent;
+  padding: 6px 25px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+.tbmain-slider-next-pre-btn {
+  display: none;
+}
+.tbmain-slider-next-pre-btn .tbcmsprev-btn-slider {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    z-index: 2;
+    cursor: pointer;
+}
+.tbmain-slider-next-pre-btn .tbcmsnext-btn-slider {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    z-index: 2;
+    cursor: pointer;
+}
+.tbmain-slider-next-pre-btn .tbcmsprev-btn-slider i, 
+.tbmain-slider-next-pre-btn .tbcmsnext-btn-slider i {
+  color: #ffffff;
+  line-height: 48px;
+  height: 48px;
+  text-align: center;
+  width: 48px;
+}
+.nivo-directionNav {
+  display: none;
+}
+.tb-main-slider {
+    position: relative;
+}
+.nivo-controlNav {
+  display: block!important;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+.nivo-controlNav .nivo-control {
+  font-size: 0;
+  border-radius: 20px;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin: 0 5px;
+  border: 1px solid transparent;
+  position: relative;
+}
+.nivo-controlNav .nivo-control:before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  background-color: #ffffff;
+  height: 12px;
+  width: 12px;
+  border-radius: 20px;
+}
+.nivo-controlNav .nivo-control.active {
+  border: 1px solid #ffffff;
+}
+.nivo-controlNav .nivo-control.active:before {
+  left: 4px;
+  top: 4px;
+  height: 6px;
+  width: 6px;
+}
+
+/**************** End Nivo Slider Css  ****************************************/
+.tbmain-slider-content-inner {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    bottom: 0px;
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 100%;
+    z-index: 8;
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=1);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#tbmain-slider .tbmain-slider-contant {
+    -webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    opacity: 0;
+    visibility: hidden;
+}
+#tbmain-slider .tbmain-slider-contant-left{
+    transform: translateX(-50px);
+}
+
+ #tbmain-slider .tbmain-slider-contant-left.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+#tbmain-slider .tbmain-slider-contant-right{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(50px);
+}
+#tbmain-slider .tbmain-slider-contant-right.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+#tbmain-slider .tbmain-slider-contant-center{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+}
+#tbmain-slider .tbmain-slider-contant-center.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    }
+#tbmain-slider .tbmain-slider-contant .tbmain-slider-btn:hover{
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .tbmain-slider-contant .tbmain-slider-title {
+      font-size: 25px;
+  }
+  .tbmain-slider-contant .tbmain-slider-info h2 {
+    font-size: 25px;
+  }
+  .tbmain-slider-contant .tbmain-slider-info p {
+      font-size: 14px;
+  }
+  .nivo-controlNav {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 575px) {
+  .tbmain-slider-contant .tbmain-slider-title {
+      font-size: 16px;
+      margin-bottom: 5px
+  }
+  .tbmain-slider-contant .tbmain-slider-info h2 {
+    font-size: 16px;
+    margin-bottom: 5px
+  }
+  .tbmain-slider-contant .tbmain-slider-info p {
+      font-size: 13px;
+      margin-bottom: 5px;
+  }
+  .tbmain-slider-contant .tbmain-slider-button {
+    padding: 2px 15px;
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 360px) and (min-width: 320px){
+
+  .tbmain-slider-contant .tbmain-slider-button {
+    padding: 0px 15px;
+  }
+
+  .tbmain-slider-contant {
+    max-width: 100%;
+    width: auto;
+  } 
+  .tbmain-slider-contant.tbmain-slider-contant-left {
+    left: 3%;
+  }
+
+  .tbmain-slider-contant.tbmain-slider-contant-right {
+    right: 3%;
+  }
+
+  .nivo-caption {
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+    -o-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    -moz-transform: translateY(-40%);
+    transform: translateY(-40%);
+  }
+
+}

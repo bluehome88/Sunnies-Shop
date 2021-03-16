@@ -1,0 +1,260 @@
+*::-webkit-scrollbar-thumb{
+    background-color: #40ff82;
+}
+a:hover,
+.btn-outline-primary,
+.btn-link,
+.page-link,
+.text-primary,
+.btn-unstyle:focus .expand-more,
+.dropdown-item:focus,
+.dropdown-item:hover,
+.search-widget form input[type=text]:focus+button .search,
+.search-widget form button[type=submit] .search:hover,
+#header .top-menu a[data-depth="0"]:hover,
+.top-menu .sub-menu a:hover,
+.page-my-account #content .links a:hover i,
+.carousel .carousel-control .icon-next:hover i,
+.carousel .carousel-control .icon-prev:hover i,
+.pagination .current a,
+.block-categories .collapse-icons .add:hover,
+.block-categories .collapse-icons .remove:hover,
+.block-categories .arrows .arrow-down:hover,
+.block-categories .arrows .arrow-right:hover,
+.tabs .nav-tabs .nav-link.active,
+#blockcart-modal .product-name,
+.cart-grid-body a.label:hover,
+.block_newsletter form input[type=text]:focus+button .search,
+.block_newsletter form button[type=submit] .search:hover,
+.account-list a:hover,
+#header .header-nav .blockcart a:hover,
+#wrapper .breadcrumb li:last-child a, 
+#wrapper .breadcrumb li:hover a,
+#search_filters_brands .facet .tbsearch-filter-brand-wrapper li.facet-label a:hover, 
+.tbserach-filter-suppliers p:hover{
+	color: #40ff82;
+}
+.btn-primary:hover,
+.btn-info.active.focus,
+.btn-info.active:focus,
+.btn-info.active:hover,
+.btn-info:active.focus,
+.btn-info:active:focus,
+.btn-info:active:hover,
+.open>.btn-info.dropdown-toggle.focus,
+.open>.btn-info.dropdown-toggle:focus,
+.open>.btn-info.dropdown-toggle:hover,
+.btn-outline-primary.active,
+.btn-outline-primary.focus,
+.btn-outline-primary:active,
+.btn-outline-primary:focus,
+.btn-outline-primary:hover,
+.open>.btn-outline-primary.dropdown-toggle,
+.btn-outline-info.active.focus,
+.btn-outline-info.active:focus,
+.btn-outline-info.active:hover,
+.btn-outline-info:active.focus,
+.btn-outline-info:active:focus,
+.btn-outline-info:active:hover,
+.open>.btn-outline-info.dropdown-toggle.focus,
+.open>.btn-outline-info.dropdown-toggle:focus,
+.open>.btn-outline-info.dropdown-toggle:hover,
+.dropdown-item.active,
+.dropdown-item.active:focus,
+.dropdown-item.active:hover,
+.nav-pills .nav-item.open .nav-link,
+.nav-pills .nav-item.open .nav-link:focus,
+.nav-pills .nav-item.open .nav-link:hover,
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.active:focus,
+.nav-pills .nav-link.active:hover,
+.card-primary,
+.page-item.active .page-link,
+.page-item.active .page-link:focus,
+.page-item.active .page-link:hover,
+.tag-primary,
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover,
+.bg-primary,
+.bootstrap-touchspin .group-span-filestyle .btn-touchspin,
+.group-span-filestyle .bootstrap-touchspin .btn-touchspin,
+.group-span-filestyle .btn-default,
+.custom-radio input[type=radio]:checked+span,
+body#checkout section.checkout-step .delete-address,
+body#checkout section.checkout-step .edit-address,
+.products-sort-order .select-list:hover,
+.facet-dropdown .select-list:hover,
+#header .header-nav .cart-preview.active,
+.tb-continue-shopping-btn:hover,
+.page-footer a,
+.tb-continue-shopping-btn,
+.tbprocess-to-checkout,
+#newsletter_block_popup .block_content .send-reqest:hover,
+.footer_links.wishlist_footer a,
+.tbwishlist-send-mess-btn .button-small,
+.tbcmsNewsLetterPopup-i .tbnewsletterpopup-button-icon:hover {
+	background-color: #40ff82;
+}
+.btn-info.active.focus,
+.btn-info.active:focus,
+.btn-info.active:hover,
+.btn-info:active.focus,
+.btn-info:active:focus,
+.btn-info:active:hover,
+.open>.btn-info.dropdown-toggle.focus,
+.open>.btn-info.dropdown-toggle:focus,
+.open>.btn-info.dropdown-toggle:hover,
+.btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.focus,
+.btn-outline-primary:active,
+.btn-outline-primary:focus,
+.btn-outline-primary:hover,
+.open>.btn-outline-primary.dropdown-toggle,
+.btn-outline-info.active.focus,
+.btn-outline-info.active:focus,
+.btn-outline-info.active:hover,
+.btn-outline-info:active.focus,
+.btn-outline-info:active:focus,
+.btn-outline-info:active:hover,
+.open>.btn-outline-info.dropdown-toggle.focus,
+.open>.btn-outline-info.dropdown-toggle:focus,
+.open>.btn-outline-info.dropdown-toggle:hover,
+.card-primary,
+.card-outline-primary,
+.page-item.active .page-link,
+.page-item.active .page-link:focus,
+.page-item.active .page-link:hover,
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+	border-color: #40ff82;
+}
+.facet-dropdown.open>.select-title {
+	border: 3px solid #40ff82;
+}
+.tabs .nav-tabs .nav-link.active,
+.tabs .nav-tabs .nav-link:hover {
+	border-bottom: 3px solid #40ff82;
+}
+#product-modal .modal-content .modal-body .product-images img:hover {
+	border: 3px solid #40ff82;
+}
+.product-images>li.thumb-container>.thumb.selected,
+.product-images>li.thumb-container>.thumb:hover {
+	border: 2px solid #40ff82;
+}
+/**************** theme color ****************/
+.tbsearch-dropdown-total-wrapper:hover .tbsearch-dropdown-total,
+.tball-block-box-shadows:hover .tbservices-content-box .tbservices-title,
+.tbblog-event-all-content-block .tbnews-event-titel a:hover,
+.tbmain-slider-contant .tbmain-slider-title:hover,
+.tbmain-slider-contant .tbmain-slider-button:hover,
+.evntoffert-text span,
+.tbtags-wrapper-info .tbtags-title a:hover,
+#tbcmsdesktop-main-menu .tbcmsmain-menu-wrapper .tb-header-menu[data-depth="1"] > li > .tbmenu-link-wrapper a span:hover,
+#tbcmsdesktop-language-selector:hover .tb-language-btn i, 
+#tbcmsdesktop-currency-selector:hover .tb-currency-btn i, 
+#tbcmsdesktop-user-info:hover .tbhedaer-sign-btn i,
+#tbcmsdesktop-language-selector:hover .tb-language-btn .tb-language-span, 
+#tbcmsdesktop-currency-selector:hover .tb-currency-btn .tb-currency-span, 
+#tbcmsdesktop-user-info .tbhedaer-sign-btn:hover,
+.tb-language-dropdown li a:hover, 
+.tb-currency-dropdown li a:hover,
+.tbcmsdesktop-custom-link a,
+.tbcmsvertical-menu li.level-1:hover > .tb-vertical-menu-text-wrapper .tbvertical-menu-category,
+.tbvertical-menu-show-hide-category:hover span,
+.tb-vertical-menu-text-wrapper .tbvertical-menu-category:hover, 
+.tbvertical-menu-show-hide-category span:hover,
+.tbnews-event-link a:hover,
+.tballproduct-link a:hover,
+.tbleft-right-penal-all-block .tball-product-bottom-link-block a:hover, 
+.tbcmsblog-left-side .tbnews-event-link a:hover,
+.tbfooter-view-link a:hover,
+.tbnews-event-link a:hover i,
+.tballproduct-link a:hover i,
+.tbleft-right-penal-all-block .tball-product-bottom-link-block a:hover i,
+.tbcmsblog-left-side .tbnews-event-link a:hover i,
+.tbfooter-view-link a:hover i,
+.tbtab-title-wrapper .tbtabs-products li:hover span,
+.tbtab-title-wrapper .tbtabs-products li.active span,
+.tbproduct-timer-wrapper .seconds,
+.tbproduct-wrapper:hover .tbproduct-name .product-title a h6,
+.tb-product-catalog-btn .tbproduct-cart-quentity,
+.tbproduct-page-wrapper .tball-product-star-icon .tball-product-review,
+.tbfooter-store-link a:hover,
+.footer-container li a:hover,
+.tbcopylink p:hover,
+.tbcmsdesktop-view-wishlist .tbwishlist-name:hover span,
+.tbcmsdesktop-view-compare .tbdesktop-view-compare-name:hover,
+.tbcms-header-myaccount:hover .tb-account-wrapper .tb-myaccount-btn span,
+.tbcontact-wrapper:hover #contact-link span,
+.tb-cart-wrapper:hover .tbcart-icon-text-wrapper .tbcart-lable,
+.tbcmsvertical-menu ul li.level-1 ul li>a:hover {
+	color: #40ff82;
+}
+.tbcart-product-list-checkout:hover,
+#products.grid .tbproduct-view.tbproduct-grid,
+#products.grid-2 .tbproduct-view.tbproduct-grid-2,
+#products.list .tbproduct-view.tbproduct-list,
+#products.list-2 .tbproduct-view.tbproduct-list-2,
+#products.catelog .tbproduct-view.tbproduct-catelog,
+.tbcms-left-column-wrapper .tb-left-pannal-btn-wrapper:hover,
+.tbcmsproduct-grid-list .tbproduct-view:hover,
+.tb_search_filter_wrapper .tbleft-right-title-wrapper:hover,
+.tbcmstheme-control .tbtheme-control-icon:hover,
+.tbtheme-control-wrapper .tbtheme-option .btn-primary,
+.tbtheme-control-wrapper .tbtheme-control-reset:hover,
+.tbcmstheme-control .tbtheme-control-wrapper .tbselect-theme select option:hover,
+.tbmain-slider-contant .tbmain-slider-button,
+#tbcmsdesktop-main-menu .tbcmsmain-menu-wrapper .tb-header-menu[data-depth="0"] > li > .tbmenu-link-wrapper a span:after,
+.tbheader-top-search-wrapper,
+.tbsearch-more-search:hover,
+.tbvertical-menu-img-block,
+.tbtabcategory-product-li:hover,
+.tbtabcategory-show:hover,
+.tbtabcategory-hide:hover,
+.tbtabcategory-product-inner .owl-item.active .tbtabcategory-product-li.active,
+.tbproduct-cart-quentity-increment:hover, 
+.tbproduct-cart-quentity-decrement:hover,
+.nivo-controlNav .nivo-control.active,
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span,
+.tbnewsleteer-btn-wrapper .btn-primary[type=submit],
+.tbapp-logo-apple .tbapp-logo-image:hover,
+.tbapp-logo-google .tbapp-logo-image:hover,
+.tbapp-logo-microsoft .tbapp-logo-image:hover,
+.tbbottom-to-top:hover,
+#tbnewsletter-email-subscribe:hover {
+	background-color: #40ff82;
+}
+.tbleft-right-title-wrapper,
+.tb-category-title-wrapper,
+.tbcategory-title-wrapper  {
+	border-left: 3px solid #40ff82;
+}
+.lang-rtl .tbcmsvertical-menu li.level-1:hover, 
+.lang-rtl .tbvertical-menu-show-hide-category .tbvertical-show-category:hover, 
+.lang-rtl .tbvertical-menu-show-hide-category .tbvertical-hide-category:hover {
+	border-right: 3px solid #40ff82; 
+}
+.tbsearch-more-search:hover{
+	border: 1px solid #40ff82;
+}
+.tbcmsmain-title-wrapper {
+	border-left: 3px solid #40ff82;
+}
+.tbtab-title-wrapper .tbtabs-products li:hover,
+.tbtab-title-wrapper .tbtabs-products li.active {
+	border-bottom: 1px solid #40ff82;
+}
+.lang-rtl .tbcmsmain-title-wrapper {
+	border-right: 3px solid #40ff82;
+}
+.lang-rtl .tbleft-right-title.facet-label, 
+.lang-rtl .block-categories .category-top-menu > li.tb-category-title-wrapper a,
+.lang-rtl .tbleft-right-title-wrapper, 
+.lang-rtl .tb-category-title-wrapper{
+	border-right: 3px solid #40ff82;
+}

@@ -1,0 +1,312 @@
+<?php
+/**
+* 2007-2019 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2019 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*/
+
+#tb-wrapper-settings {
+    margin: 0 auto 20px;
+}
+#tb-wrapper-settings * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#tb-sub-header,
+#tb-header-tabs,
+#tb-wrapper-settings .tb-settings-inner,
+#tb-settings .panel-footer,
+#tb-footer .tb-title,
+#tb-footer .tb-footer-inner {
+    margin: 0;
+    padding: 30px;
+    background: #f5f5f5;
+    border-left: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+}
+#tb-wrapper-settings .module_confirmation {
+    margin: 0;
+}
+
+
+/* Admin Header */
+#tb-header .tb-title {
+    position: relative;
+    padding: 30px 40px;
+    background: #303030;
+}
+#tb-header .tb-title .tb-logo {
+    margin-right: 10px;
+    vertical-align: top;
+}
+#tb-header .tb-title .module-name {
+    color: #fff;
+    font-size: 22px;
+    line-height: 57px;
+    text-transform: uppercase;
+}
+#tb-header .tb-title .module-version {
+    text-transform: none;
+}
+#tb-header .tb-title .tb-author {
+    float: right;
+    margin: 0;
+    color: #fff;
+    font-size: 11px;
+    line-height: 19px;
+    text-align: right;
+}
+#tb-header .tb-title .tb-author a {
+    color: #fff;
+}
+
+
+/* Admin Sub-Header */
+#tb-sub-header p {
+    margin-top: 0;
+}
+#tb-sub-header p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Admin Header Tabs */
+#tb-header-tabs {
+    padding-left: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#tb-header-tabs .tb-tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#tb-header-tabs .tb-tabs .tab {
+    float: left;
+    margin-right: 6px;
+}
+#tb-header-tabs .tb-tabs .tab-link {
+    display: block;
+    padding: 10px 20px;
+    background: #eee; /* #039be5 */
+    border-radius: 2px 2px 0 0;
+    color: #222;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+#tb-header-tabs .tb-tabs .tab-link:hover {
+    background: #f1f1f1;
+}
+#tb-header-tabs .tb-tabs .tab-link.active {
+    background: #fff;
+}
+
+
+/* Admin Settings Section */
+#tb-settings .tb-settings-inner {
+    padding-bottom: 0;
+    background: #fff;
+}
+#tb-settings .tb-settings-inner .panel,
+#tb-settings .tb-settings-inner fieldset {
+    padding: 0;
+    margin: 0;
+    background: 0 none;
+    border: 0 none;
+}
+#tb-settings .tb-options-title {
+    margin: 0 0 30px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #F2F2F2;
+    cursor: pointer;
+    color: #303030;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#tb-settings .tb-options-title .tb-title-toggle {
+    float: right;
+    display: block;
+    margin: 5px 0 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #333;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+#tb-settings .tb-options-title:hover .tb-title-toggle,
+#tb-settings .tb-options-title.up:hover .tb-title-toggle {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+#tb-settings .tb-options-title.up .tb-title-toggle {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+#tb-settings .tb-options-title.with-mgt {
+    margin-top: 30px;
+}
+#tb-settings fieldset .margin-form {
+    padding-bottom: 2em;
+}
+#tb-settings fieldset label {
+    width: auto;
+}
+@media (min-width: 1200px) {
+    #tb-settings fieldset label {
+        width: 25%;
+    }
+}
+#tb-settings .tb-settings-inner input[type="text"] {
+    min-width: 200px;
+    height: 30px;
+    line-height: 30px;
+}
+#tb-settings .panel-footer {
+    position: relative;
+    left: -31px;
+    width: 100%;
+    margin-top: 30px;
+    height: auto;
+    border-top: 0 none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    text-align: center;
+}
+#tb-settings .panel-footer .tb-input-submit {
+    display: inline-block;
+    min-width: 180px;
+    margin: 0;
+    padding: 0 20px;
+    background: #8bc34a;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 #6F9C3B;
+    cursor: pointer;
+    outline: none;
+
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 1px #6f9c3b,1px 0 1px #6f9c3b,0 1px 1px #6f9c3b;
+
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+#tb-settings .panel-footer .tb-input-submit i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    color: #fff;
+    text-shadow: none;
+}
+#tb-settings .panel-footer .tb-input-submit:hover {
+    background: #6f9c3b;
+}
+#tb-settings .panel-footer .tb-input-submit:active {
+    box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5);
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    -o-transform: translateY(1px);
+    transform: translateY(1px);
+}
+
+
+/* Admin Footer */
+#tb-footer .tb-title {
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #1c1c1c;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#tb-footer .tb-footer-inner {
+    background: #303030;
+    color: #bebebe;
+}
+#tb-footer p {
+    color: #bebebe;
+}
+#tb-footer .one-module {
+    float: left;
+    width: 20%;
+}
+#tb-footer .one-module .module-logo {
+    float: left;
+    height: 57px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#tb-footer .one-module .module-infos {
+    padding: 0 10px 0 0;
+}
+#tb-footer .one-module .module-title {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+}
+#tb-footer .one-module .module-infos p {
+    margin-bottom: 0;
+}
+
+
+/* Useful class */
+#tb-wrapper-settings .clearfix {
+    zoom: 1;
+}
+#tb-wrapper-settings .clearfix:before, #tb-wrapper-settings .clearfix:after {
+    content: " ";
+    display: table;
+}
+#tb-wrapper-settings .clearfix:after {
+    clear: both;
+}

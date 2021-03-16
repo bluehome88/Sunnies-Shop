@@ -1,0 +1,84 @@
+#orderexchange_form .product-line-disabled
+{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=50);
+   -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+#orderexchange_form .form-group-fixed
+{
+	display: inline-block;
+	max-width: 80px;
+	vertical-align: middle;
+	margin: 0;
+}
+
+#orderexchange_form .form-group-fixed-large
+{
+	display: inline-block;
+	max-width: 250px;
+	vertical-align: middle;
+}
+
+#orderexchange_form .search_product select
+{
+	display: inline-block;
+	width: auto;
+}
+
+#orderexchange_form .search_product label
+{
+	min-width: 7em;
+}
+
+#orderexchange_form .selected_product .btn-default
+{
+	margin-top: .75em;
+}
+
+#orderexchange_form .search_product .btn-primary
+{
+	margin-top: .75em;
+	margin-left: 7.8em;
+}
+
+#orderexchange_form .chosen-container-single {
+	width: 100% !important
+}
+
+#orderexchange_form .fixed-width-md {
+	margin: 0 auto;
+}
+
+#orderexchange_form .hide_label > .control-label {
+	display: none;
+}
+
+#mask {
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  top: 1px;
+  right: 1px;
+  text-align: center;
+  line-height: 100%;
+  z-index: 999;
+}
+
+#mask div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  background: url(../img/admin/ajax-loader.gif) no-repeat top center;
+  height: 70px;
+  margin-left: -150px;
+  margin-top: -35px;
+  padding-top: 40px;
+}
+
+#mask i {
+  margin-bottom: .25em
+}

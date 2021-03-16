@@ -1,0 +1,121 @@
+.text-center {
+    text-align: center;
+}
+
+.tb-product-page {
+    margin-bottom: 0!important;
+}
+
+.tb-product-page .tb-indicator div {
+    margin-bottom: 0!important;
+}
+
+.tb-product-page .tb-indicator {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-orient: horizontal!important;
+    -webkit-box-direction: normal!important;
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    margin: 0 0 25px 0;
+}
+
+.tb-product-page .tb-indicator .tb-outer {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.tb-product-page .tb-indicator .tb-items {
+    margin-top: 0;
+    margin-left: .625rem;
+}
+.lang-rtl#product .tb-product-page .tb-indicator .tb-items {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.tb-product-list {
+    margin-top: 8px;
+    text-align: center;
+}
+.tbproduct-wrapper.list .tb-product-list {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+/** Popovers */
+
+.tbtooltip.popover {
+    border: none;
+    padding: 0;
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
+    border-radius: 4px;
+}
+
+.tbtooltip .popover-title {
+    background-color: transparent;
+    padding: 10px 12px;
+    font-size: 13px;
+    font-weight: normal;
+    border: none;
+}
+
+.tbtooltip .popover-content {
+    font-size: .750rem;
+    padding: 0;
+}
+
+.tbtooltip.popover.bs-tether-element-attached-bottom:before,
+.tbtooltip.popover.popover-top:before {
+    display: none;
+}
+
+/** Add popover caret for 1.6 (bootstrap 3) */
+
+.tbtooltip.popover.top:after {
+    content: "";
+    border-width: 10px;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    bottom: -10px;
+    margin-left: -10px;
+    border-top-color: #fff;
+}
+
+.tbtooltip.popover.top:after {
+    left: 50%;
+    border-bottom-width: 0;
+}
+
+/** 1.7 Classic Theme Mods */
+/*
+#products .product-description,
+.featured-products .product-description,
+.product-accessories .product-description,
+.product-miniature .product-description {
+    height: 130px;
+}*/
+
+#products .thumbnail-container:focus .highlighted-informations,
+#products .thumbnail-container:hover .highlighted-informations,
+.featured-products .thumbnail-container:focus .highlighted-informations,
+.featured-products .thumbnail-container:hover .highlighted-informations,
+.product-accessories .thumbnail-container:focus .highlighted-informations,
+.product-accessories .thumbnail-container:hover .highlighted-informations,
+.product-miniature .thumbnail-container:focus .highlighted-informations,
+.product-miniature .thumbnail-container:hover .highlighted-informations {
+    bottom: 9.250rem;
+}
+@media (max-width: 575px) {
+    .tbproduct-wrapper.list .tb-product-list {
+        text-align: center;
+    }
+}

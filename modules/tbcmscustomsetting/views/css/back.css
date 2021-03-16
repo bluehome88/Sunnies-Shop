@@ -1,0 +1,149 @@
+/**
+* 2007-2019 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2019 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+
+.tbcmsall-pattern-show {
+	height: auto;
+    width: 200px;
+}
+.tball-pattern-show,
+.tball-body-pattern-show {
+	border: 1px solid #ccc;
+    cursor: pointer;
+    float: left;
+    height: 22px;
+    margin: 0 5px 5px 0;
+    width: 22px;
+}
+.tbcms_custom_setting_active,
+.tbcms_custom_setting_body_active{
+	border-color: #f00 !important;
+}
+
+.tball-pattern-show:hover,
+.tball-body-pattern-show:hover {
+	border-color: #000;
+}
+.custom_pattern,
+.custom_body_pattern {
+    margin-top: 5px;
+}
+
+
+.tbcmsadmincustom-setting {
+    width: 100%;
+}
+.tbcmsadmincustom-setting .panel {
+    display: none;
+}
+.tbadmincustom-setting-all-tabs {
+    display: block;
+    padding: 5px 10px 0 10px;
+    margin: 0 !important;
+
+}
+.tbadmincustom-setting-tab {
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 14px;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    border-left: 1px solid #eff1f2;
+    border-right:1px solid #eff1f2;
+    border-top:1px solid #eff1f2;
+}
+
+.tbadmincustom-setting-tab:hover,
+.tbadmincustom-setting-active {
+    cursor: pointer;
+    border-left: 1px solid #8b8b8b;
+    border-right:1px solid #8b8b8b;
+    border-top:1px solid #8b8b8b;
+    border-radius:5px 5px 0px 0px;
+}
+
+#TBCMSCUSTOMSETTING_THEME_OPTION input[type="radio"]{
+    float: left;
+
+}
+.color-wrapper{
+    float: left;
+}
+#TBCMSCUSTOMSETTING_THEME_OPTION .col-lg-9 p{
+    float: left;
+    margin-right: 10px;
+}
+#TBCMSCUSTOMSETTING_THEME_OPTION .col-lg-9 p.help-block{
+    width: 18%;
+}
+
+.color-wrapper.theme1 .first{
+    background-color: #df3437;
+}
+.color-wrapper.theme1 .second{
+    background-color: #00ebff;
+}
+
+.color-wrapper.theme2 .first{
+    background-color: #00a9ff;
+}
+.color-wrapper.theme2 .second{
+    background-color: #ffea00;
+}
+
+.color-wrapper.theme3 .first{
+    background-color: #ffb800;
+}
+.color-wrapper.theme3 .second{
+    background-color: #e93a3a;
+}
+
+.color-wrapper.theme4 .first{
+    background-color: #ff4e00;
+}
+.color-wrapper.theme4 .second{
+    background-color: #ab6cf7;
+}
+
+.color-wrapper .first,
+.color-wrapper .second{
+    width: 20px; 
+    height: 12px; 
+    margin: 2px;
+    border: 1px solid #eee;
+}
+
+.tbcmstable tbody td{
+    padding: 10px !important;
+    font-size: 14px !important;
+}
+.tbcmstable tbody tr:nth-child(even) td{
+    background: #f5f5f5 !important;
+}

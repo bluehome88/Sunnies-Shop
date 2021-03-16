@@ -1,0 +1,25 @@
+## [1.0.9] - 2016-04-28
+- Change version for OrderSlip::create call
+- Optimisation in order creation (less variables)
+- Bug fix Call to undefined method stdClass::cloneContext() in 1.6.0.8. (again)
+
+## [1.0.8] - 2016-14-04
+- Bug fix in return with MondialRelay
+
+## [1.0.7] - 2016-03-02
+- Update SoFlexibilite compatibility
+
+## [1.0.6] - 2016-02-25
+- Force id addresses in cart creation
+
+## [1.0.5] - 2016-01-28
+- Bug fix Call to undefined method stdClass::cloneContext() in 1.6.0.8.
+
+## [1.0.3] - 2015-10-26
+- Add soflexibilite module compatibility.
+- Update module icon size.
+
+## [1.0.2] - 2015-10-16
+- Switch to PSR-2 Coding standard.
+- Add Mondial relay compatibility.
+- Add Chrono relay compatibility.

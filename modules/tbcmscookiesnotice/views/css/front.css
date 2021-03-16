@@ -1,0 +1,114 @@
+/**
+* 2007-2019 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2019 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*/
+
+.tbcmscookies-notice{
+	position: fixed;
+	z-index: 100;
+	background-color: #222222;
+	width: 400px;
+	padding: 15px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	bottom: 0;
+}
+.tbcookies-notice-title{
+	color: #ffffff;
+	padding-right: 15px;
+}
+.tbcookies-notice-title a {
+	color: #ffffff;
+}
+.tbclose-btn{
+	display: none;
+}
+.tbcookie-btn-wrapper{
+	float: left;
+}
+.tbcookie-content {
+	margin-bottom: 20px;
+	text-align: left;
+	font-size: 12px;
+	font-weight: 400;
+}
+.tbcoockies-btn-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: flex-end;
+	-ms-flex-pack: flex-end;
+	justify-content: flex-end;
+}
+.tbcoockies-btn-wrapper a {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #a8a8a8;
+}
+.tbcoockies-btn-wrapper .tbcoockies-accept {
+	margin-left: 20px;
+	cursor: pointer;
+	color: #ffffff;
+}
+.tbcoockies-btn-wrapper .tbcoockies-accept span{
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.tbcoockies-btn-wrapper .tbcoockies-accept:hover span{
+	text-decoration: none;
+}
+.tbcoockies-btn-wrapper .tbcoockies-accept i{
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.tbclose-icon{
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 14px;
+	border: none;
+}
+.tbok-btn{
+	display: none;
+}
+.tbcookies-notice-icon{
+	float: right;
+}
+.tbcookies-notice-img-inner{
+	display: inline-block;
+	text-align: center;
+}
+@media(max-width: 480px){
+	.tbcmscookies-notice{
+		width: 100%;
+	}
+}
+.lang-rtl .tbcoockies-btn-wrapper .tbcoockies-accept {
+	margin-right: 10px;
+	margin-left: 0;
+}

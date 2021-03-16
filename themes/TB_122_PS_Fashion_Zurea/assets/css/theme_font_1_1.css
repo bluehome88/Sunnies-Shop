@@ -1,0 +1,68 @@
+/*
+
+All Title You Must Write to start With '#' Sign
+fontFamily1        = Change Font 1
+fontFamily2        = Change Font 2
+customTitleColor   = Change Title color Font
+
+*/
+
+body {
+    font-family: 'Chivo', sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    background-color: #f7f7f7;
+    letter-spacing: 0.5px;
+}
+
+.block-categories .category-top-menu > li.tb-category-title-wrapper a {
+    text-align: left;
+    color: '#ffffff';
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Cabin', sans-serif;
+}
+
+#right-column .tbservices-content-box .tbservices-title {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: '#ffffff';
+    font-weight: 500;
+    transition: all 600ms ease 0s;
+    -webkit-transition: all 600ms ease 0s;
+    -moz-transition: all 600ms ease 0s;
+    -ms-transition: all 600ms ease 0s;
+    -o-transition: all 600ms ease 0s;
+    margin-bottom: 5px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.tbcategory-slider-title{
+    color: '#ffffff';
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: 'Cabin', sans-serif;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.tbtestimonial-title a {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #333333;
+    font-family: 'Chivo', sans-serif;
+}
+/***************** font ***********/
+body {
+    font-family: 'Chivo', sans-serif;
+}
+.tbbanner-content-wrapper h6,
+.tbcms-main-title .tbmain-title h2,
+#block-newsletter-label {
+    font-family: 'Cabin', sans-serif;
+}

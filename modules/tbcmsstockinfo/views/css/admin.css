@@ -1,0 +1,119 @@
+#tbAdminMain {
+  font-size: 13px;
+}
+
+#content.bootstrap #tbAdminMain .panel .panel-heading {
+  font-size: 1.25rem;
+  height: auto;
+  text-transform: capitalize;
+}
+
+#content.bootstrap #tbAdminMain .panel .panel-heading i {
+  font-size: inherit;
+  color: #959595;
+  margin-right: 6px;
+}
+
+#content.bootstrap #tbAdminMain .panel .panel-footer,
+#content.bootstrap #tbAdminMain #dash_version .panel-footer,
+#content.bootstrap #tbAdminMain .message-item-initial .message-item-initial-body .panel-footer,
+#content.bootstrap #tbAdminMain .timeline .timeline-item .timeline-caption .timeline-panel .panel-footer {
+  border-radius: 5px;
+}
+
+#tbAdminMain .input-group.fixed-width-lg {
+  width: auto!important;
+}
+
+#tbAdminMain .list-group-item {
+  font-size: 14px;
+}
+
+#tbAdminMain .list-group-item.active {
+  font-weight: bold;
+}
+
+#tbAdminMain .list-group-item.active .material-icons.material-svg svg {
+  fill: #fff;
+}
+
+/** Footer */
+
+#tbAdminFooter {
+    margin-bottom: 15px;
+}
+
+#tbAdminFooter ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+
+#tbAdminFooter ol li:not(:first-child)::before {
+    content: '\00b7';
+    margin: 0 3px;
+}
+
+#tbAdminFooter ol li i {
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+#tbAdminFooter .tb-rate-module {
+    color: orange;
+    font-weight: bold;
+}
+
+#tbAdminFooter .tb-rate-module i {
+    color: #FBBB22;
+}
+
+/** Custom form elements */
+
+#tbAdminMain .well-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+#tbAdminMain .well-input + label.well {
+    display: block;
+}
+
+#tbAdminMain .well-input + label.well:hover {
+    background-color: #edf7fb;
+    cursor: pointer;
+}
+
+#tbAdminMain .well-input + label.well .h2::before {
+    color: #C6C6C6;
+    content: '\f10c';
+    font-family: FontAwesome;
+    margin-right: 6px;
+}
+
+#tbAdminMain .well-input:checked + label.well {
+    background-color: #EEF9ED;
+}
+
+#tbAdminMain .well-input:checked + label.well .h2::before {
+    color: #54BF4A;
+    content: '\f058';
+}
+
+#tbAdminMain .well-input[disabled] + label.well .h2::before {
+    color: #CA6F6F;
+    content: '\f057';
+}
+
+@media (min-width: 992px) {
+    #tbAdminMain .well-input + label.well {
+        min-height: 425px;
+    }
+}
