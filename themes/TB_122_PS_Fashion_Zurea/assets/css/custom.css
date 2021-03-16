@@ -2302,3 +2302,69 @@ input {
 	margin:0;
 }
 /***********************************end_search_filters*******************************************/
+
+/* custom css by Yakov */
+.tbcmsdesktop-top-header{
+	padding-left: 0px;
+}
+.tbcmsdesktop-top-header-wrapper .tbheader-offer-wrapper{
+	background: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.tbheader-nav-offer-text span{
+	color: #222222;
+	line-height: 100px;
+	font-style: italic;
+	font-size: 14px;
+}
+.tbcmsblog_img, .img-responsive{
+	height: 100px;
+}
+.tbheader-navbar-inner{
+	border-top: 1px solid #444444;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+#header{
+	margin-bottom: 5px;
+}
+.tbheader-sarch-display{
+	border: 1px solid #aaaaaa;
+}
+.tbheader-cart-wrapper{
+	background: transparent;
+	border: 1px solid #aaaaaa;
+	padding: 10px 20px;
+	margin: 20px 10px;
+}
+.tb-cart-cart-inner{
+	color: black;
+}
+.tb-bg-wrapper{
+	background: black;
+	border-radius: 50%;
+	display: inline-block;
+    vertical-align: middle;
+    padding: 2px;
+}
+.tb-header-logo{
+	text-align: center;
+}
+.tbheader-offer-wrapper-outer .tb-nav-text{
+	font-style: italic;
+	line-height: 100px;
+	margin-right: 20px;
+	float: left;
+}
+.tbheader-offer-wrapper-outer .tb-nav-text.first{
+	color: #0dab8d;
+	font-weight: bold;
+}
+.tbcmsdesktop-top-header-wrapper .tbcmsmain-menu-wrapper{
+	text-align: left;
+}
+#tbcmsdesktop-main-menu .tbcmsmain-menu-wrapper > .tb-header-menu > li{
+	padding: 25px 32px 25px 0px;
+}

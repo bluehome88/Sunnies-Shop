@@ -40,13 +40,36 @@
 		<div class="container">
 			<div class="row">
 				<div class='tbheader-offer-account-inner'>
-					<div class='tbheader-offer-wrapper-outer col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12'>
+					<div class='tbheader-offer-wrapper-outer col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-12'>
+						<div class="tb-nav-text first">{l s='Free Shipping Over $50'}</div>
+						<div class="tb-nav-text">{l s='30-day Return Policy'}</div>
+						<div class="tb-nav-text">{l s='100% UV-protection'}</div>
 							{hook h='displayTopOfferText'}
 					</div>
-					<div class='tbheader-account-wrapper col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12'>
-						{hook h='displayNavLanguageBlock'}
-						{hook h='displayNavCurrencyBlock'}
-						
+					<div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 hidden-md-down tbcms-header-logo" id="tbcmsdesktop-logo">
+						<div class="tb-header-logo">
+							<a href="{$urls.base_url}">
+							  <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+							</a>
+						</div>
+					</div>
+					<div class='tbheader-account-wrapper col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-12'>
+						<div class="tbcms-header-myaccount">
+							<div class="tb-header-account">
+								<div class="tb-account-wrapper">
+									<button class="btn-unstyle tb-myaccount-btn">
+										{* <span>{l s='My Account' d='Shop.Theme.Catalog'}</span> *}
+										<i class='material-icons'>&#xe7ff;</i>
+									</button>
+									<ul class="dropdown-menu tb-account-dropdown tb-dropdown">
+										<li>{hook h='displayNavWishlistBlock'}</li>
+										<li>{hook h='displayNavProductCompareBlock'}</li>
+										<li>{hook h='displayNavCustomerSignInBlock'}</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						{hook h='displayNavShoppingCartBlock'}
 					</div>
 				</div>
 			</div>
@@ -54,15 +77,15 @@
 	</div>
 	<div class="container hidden-md-down">
 		<div class='tbheader-navbar-inner tbcmsheader-sticky'>
-			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 hidden-md-down tbcms-header-logo" id="tbcmsdesktop-logo">
+			<!-- <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 hidden-md-down tbcms-header-logo" id="tbcmsdesktop-logo">
 				<div class="tb-header-logo">
 					<a href="{$urls.base_url}">
 					  <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
 					</a>
 				</div>
-			</div>
+			</div> -->
 
-			<div class="tbcmsdesktop-top-header col-xl-6 col-lg-6 col-md-12 col-sm-12">
+			<div class="tbcmsdesktop-top-header col-xl-11 col-lg-11 col-md-12 col-sm-12">
 				<div class="position-static tbcms-header-menu">
 					<div class='tbcmsmain-menu-wrapper'>
 						{hook h='displayNavMainMenuBlock'}
@@ -70,29 +93,13 @@
 				</div>				
 			</div>
 
-			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 tbcmsheader-nav-right hidden-md-down">
+			<div class="col-xl-1 col-lg-1 col-md-12 col-sm-12 tbcmsheader-nav-right hidden-md-down">
 				<div class="tb-search-account-cart-wrapper">
 					
 					<div class='tbcmssearch-wrapper' id="_desktop_search">
 						{hook h='displayNavSearchBlock'}
 					</div>
 					
-					<div class="tbcms-header-myaccount">
-						<div class="tb-header-account">
-							<div class="tb-account-wrapper">
-								<button class="btn-unstyle tb-myaccount-btn">
-									{* <span>{l s='My Account' d='Shop.Theme.Catalog'}</span> *}
-									<i class='material-icons'>&#xe7ff;</i>
-								</button>
-								<ul class="dropdown-menu tb-account-dropdown tb-dropdown">
-									<li>{hook h='displayNavWishlistBlock'}</li>
-									<li>{hook h='displayNavProductCompareBlock'}</li>
-									<li>{hook h='displayNavCustomerSignInBlock'}</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					{hook h='displayNavShoppingCartBlock'}
 				</div>
 			</div>
 
