@@ -29,12 +29,13 @@
 		<header class="page-header tbpage-header-title-wrapper">
           <h1 class="tbpage-header-title">{$category.name}</h1>
         </header>
-		<div class="block-category card card-block clearfix tb-category-block-wrapper">
-			{if $category.image.large.url}
-				<div class="tb-category-cover">
-					<img src="{$category.image.large.url}" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
-				</div>
-			{/if}
+		
+		{if $category.image.large.url}
+		<div class="block-category card card-block clearfix tb-category-block-wrapper has_background" style="background-image:url( {$category.image.large.url})">
+			
+		{else}
+			<div class="block-category card card-block clearfix tb-category-block-wrapper">
+		{/if}
 			<div class="tb-all-page-main-title-wrapper">
 				<div class="tb-all-page-main-title">{$category.name}</div>
 			</div>

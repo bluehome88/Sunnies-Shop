@@ -3,7 +3,7 @@
 @import url("Fjalla_One.css");
 @import url("poppins.css");
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto Slab', 'Open Sans', sans-serif;
 	font-size: 14px;
 	line-height: normal;
 	background-color: #ffffff;
@@ -447,7 +447,7 @@ body#checkout div .condition-label {
 	margin-bottom: 15px;
 }
 .tb-all-page-main-title {
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .quickview .modal-content{
 	background-color: #ffffff;
@@ -2314,12 +2314,12 @@ input {
 }
 .tbheader-nav-offer-text span{
 	color: #222222;
-	line-height: 100px;
+	line-height: 60px;
 	font-style: italic;
 	font-size: 14px;
 }
-.tbcmsblog_img, .img-responsive{
-	height: 100px;
+.tbcms-header-logo img.logo.img-responsive{
+	height: 60px;
 }
 .tbheader-navbar-inner{
 	border-top: 1px solid #444444;
@@ -2331,13 +2331,13 @@ input {
 	margin-bottom: 5px;
 }
 .tbheader-sarch-display{
-	border: 1px solid #aaaaaa;
+	/* border: 1px solid #aaaaaa; */
 }
 .tbheader-cart-wrapper{
 	background: transparent;
-	border: 1px solid #aaaaaa;
-	padding: 10px 20px;
-	margin: 20px 10px;
+	/* border: 1px solid #aaaaaa; */
+	padding: 10px 0px;
+	margin: 0px 10px;
 }
 .tb-cart-cart-inner{
 	color: black;
@@ -2354,7 +2354,7 @@ input {
 }
 .tbheader-offer-wrapper-outer .tb-nav-text{
 	font-style: italic;
-	line-height: 100px;
+	line-height: 60px;
 	margin-right: 20px;
 	float: left;
 }
@@ -2366,5 +2366,18 @@ input {
 	text-align: left;
 }
 #tbcmsdesktop-main-menu .tbcmsmain-menu-wrapper > .tb-header-menu > li{
-	padding: 25px 32px 25px 0px;
+	padding: 10px 32px 10px 0px;
+}
+.tbcmsdesktop-top-header-wrapper .tbcmsheader-sticky.sticky .tbcmsmain-menu-wrapper{
+	text-align: center;
+}
+.page-category #main .tbpage-header-title-wrapper, .tball-page-top-title{
+	display: none;
+}
+.block-category.has_background{
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.tb-category-block-wrapper #category-description{
+	max-width: 50%;
 }

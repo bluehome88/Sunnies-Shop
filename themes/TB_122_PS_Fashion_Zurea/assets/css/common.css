@@ -161,7 +161,7 @@ img{
 /******end header nav********************/
 /************************************************************* start logo *************************************************/
 .tb-header-logo {
-	height: 100px;
+	height: 60px;
 	overflow: hidden;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -563,9 +563,9 @@ img{
 }
 #_desktop_search .tbsearch-top-wrapper:hover .tbsearch-open {
 	background-position: -55px -704px;
-	-webkit-transition: all 0.5s ease 0.1s;
+	/* -webkit-transition: all 0.5s ease 0.1s;
 	-o-transition: all 0.5s ease 0.1s;
-	transition: all 0.5s ease 0.1s;
+	transition: all 0.5s ease 0.1s; */
 }
 #_desktop_search .tbsearch-top-wrapper .tbsearch-open {
 	padding: 0;
@@ -574,9 +574,9 @@ img{
 	background-position: -5px -704px;
 	width: 40px;
 	display: block;
-	-webkit-transition: all 0.5s ease 0.1s;
+	/* -webkit-transition: all 0.5s ease 0.1s;
 	-o-transition: all 0.5s ease 0.1s;
-	transition: all 0.5s ease 0.1s;
+	transition: all 0.5s ease 0.1s; */
 }
 .tbsearch-dropdown-title{
 	font-size: 16px;
@@ -624,10 +624,10 @@ img{
 }
 .tb-account-wrapper,
 .tbsearch-top-wrapper{
-	padding: 30px 0;
+	padding: 10px 0;
 }
 .tbheader-cart-wrapper {
-	padding: 30px;
+	padding: 10px 20px;
 	margin-left: 15px;
 	background-color: #000000;
 }
@@ -1557,6 +1557,18 @@ span.tbcart-product-price {
 }
 .tbproduct-wrapper .tbproduct-image img{
 	width: auto;
+	/* min-height: 250px; */
+}
+#products.grid .tbproduct-wrapper .tbproduct-image a.thumbnail,
+.page-home .tbproduct-wrapper .tbproduct-image a.thumbnail{
+	display: table-cell;
+    height: 250px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+#products.grid .tbproduct-wrapper .tbproduct-hover-img{
+	top: auto;
 }
 .tbcmsleft-special-product .tball-product-wrapper-info-box {
     padding: 0 10px;
@@ -2233,7 +2245,7 @@ ul.wlp_bought_list li .product_infos .product-name{
 }
 /************ mobile Start Gride---Gride-2---List---List-2---Cateloge Product***************/
 .tb-grid-list-wrapper-info-box {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 #products.grid-2 .tb-grid-list-wrapper-info-box{
     width: 33.33%;
