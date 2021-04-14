@@ -90,19 +90,18 @@
 					<div class='tbcmsmain-menu-wrapper'>
 						{hook h='displayNavMainMenuBlock'}
 					</div>
-				</div>				
+				</div>
 			</div>
-
 			<div class="col-xl-1 col-lg-1 col-md-12 col-sm-12 tbcmsheader-nav-right hidden-md-down">
 				<div class="tb-search-account-cart-wrapper">
-					
 					<div class='tbcmssearch-wrapper' id="_desktop_search">
 						{hook h='displayNavSearchBlock'}
 					</div>
-					
 				</div>
 			</div>
-
+			<div class='tbheader-account-wrapper col-xl-1 col-lg-1 col-md-12 col-sm-12 col-xs-12'>
+				{hook h='displayNavShoppingCartBlock'}
+			</div>
 		</div>
 	</div>
 			

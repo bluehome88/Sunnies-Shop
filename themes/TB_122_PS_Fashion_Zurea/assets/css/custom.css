@@ -350,6 +350,12 @@ body#checkout section.checkout-step .edit-address:hover {
         font-size: 24px;
         margin-bottom: 10px;
     }
+    .tbcmsdesktop-top-header-wrapper{
+    	display: none;
+    }
+    #header .logo{
+    	width:  60px;
+    }
 }
 #tb-back-top-wrapper {
 	background-color: #ffffff;
@@ -2380,4 +2386,12 @@ input {
 }
 .tb-category-block-wrapper #category-description{
 	max-width: 50%;
+}
+
+.tbcmsheader-sticky .tbheader-account-wrapper,
+.tbcmsheader-sticky .tbheader-account-wrapper .tb-cart-cart-inner{
+	display: none;
+}
+.tbcmsheader-sticky.sticky .tbheader-account-wrapper{
+	display: block;
 }
