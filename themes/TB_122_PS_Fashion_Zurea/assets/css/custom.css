@@ -2395,3 +2395,30 @@ input {
 .tbcmsheader-sticky.sticky .tbheader-account-wrapper{
 	display: block;
 }
+
+.blockreassurance_product .block-title{
+	font-weight: bold;
+	font-size: 14px;
+}
+.blockreassurance_product .item-product{
+	margin-right: 10px;
+	background: #1B84BD;
+	border-radius: 50%;
+}
+.blockreassurance_product .item-product img, .blockreassurance_product .item-product svg{
+	width: 25px;
+	height: 25px;
+	margin-left: 5px;
+}
+.blockreassurance_product p{
+	font-weight: 100;
+	font-size: 12px;
+	margin-bottom: 25px;
+}
+.blockreassurance_product div:nth-last-child(2) .item-product{
+	background: #E9AD00;
+}
+.blockreassurance_product div:nth-last-child(2) .block-title, 
+.blockreassurance_product div:nth-last-child(2) p{
+	color: #E9AD00 !important;
+}
