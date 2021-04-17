@@ -2422,3 +2422,11 @@ input {
 .blockreassurance_product div:nth-last-child(2) p{
 	color: #E9AD00 !important;
 }
+.tb-product-page-image .page-content{
+	width: 95%;
+    margin-left: 0 !important;
+}
+.page-category #wrapper .breadcrumb{
+	padding: 120px 0;
+	background-size:  100% auto;
+}

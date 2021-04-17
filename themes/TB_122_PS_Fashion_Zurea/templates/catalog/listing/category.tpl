@@ -31,8 +31,11 @@
         </header>
 		
 		{if $category.image.large.url}
-		<div class="block-category card card-block clearfix tb-category-block-wrapper has_background" style="background-image:url( {$category.image.large.url})">
-			
+		<div class="block-category card card-block clearfix tb-category-block-wrapper has_background">
+			<script>
+				var cat_bg = "{$category.image.large.url}";
+				document.getElementsByClassName("breadcrumb")[0].style.backgroundImage = "url('"+cat_bg+"')";
+			</script>
 		{else}
 			<div class="block-category card card-block clearfix tb-category-block-wrapper">
 		{/if}

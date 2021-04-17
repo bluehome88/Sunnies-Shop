@@ -1558,10 +1558,12 @@ span.tbcart-product-price {
 .tbproduct-wrapper .tbproduct-image img{
 	width: auto;
 	/* min-height: 250px; */
+	top: auto;
+	display: inline-block;
 }
 #products.grid .tbproduct-wrapper .tbproduct-image a.thumbnail,
 .page-home .tbproduct-wrapper .tbproduct-image a.thumbnail,
-.tbproduct-wrapper.grid .tbproduct-image a{
+.tbproduct-wrapper.grid .tbproduct-image a.product-thumbnail{
 	display: table-cell;
     height: 250px;
     text-align: center;
