@@ -3,7 +3,7 @@
 @import url("Fjalla_One.css");
 @import url("poppins.css");
 body {
-	font-family: 'Roboto Slab', 'Open Sans', sans-serif;
+	font-family:'Open Sans', sans-serif;
 	font-size: 14px;
 	line-height: normal;
 	background-color: #ffffff;
@@ -2429,4 +2429,19 @@ input {
 .page-category #wrapper .breadcrumb{
 	padding: 120px 0;
 	background-size:  100% auto;
+}
+#blockcart-modal .cart-content .cart-content-btn a.btn,
+.tbcart-product-list-checkout a, .tbcart-product-list-viewcart a{
+    background: #329500;
+    border: 1px solid transparent;
+}
+#blockcart-modal .cart-content .cart-content-btn a.btn:hover,
+.tbcart-product-list-checkout a, .tbcart-product-list-viewcart a:hover{
+	background-color: #329550;
+	border: 1px solid #329550;
+}
+.tbcms-main-title .tbmain-title h2{
+	color: #0dab8d;
+	font-size: 36px;
+	font-weight: normal;
 }

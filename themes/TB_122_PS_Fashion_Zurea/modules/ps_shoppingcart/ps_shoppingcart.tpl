@@ -36,8 +36,7 @@
                             </div> 
                         </div>
                         <div class="tb-cart-cart-inner">
-                            <span class="tbcart-lable">{l s='Cart - ' d='Shop.Theme.Checkout'}</span> 
-                            <span class="tb-cart-title">{count($cart.products)}</span>
+                            <span class="tbcart-lable">{l s='Cart' d='Shop.Theme.Checkout'} ({count($cart.products)})</span> 
                         </div>
                     </div>
                 </a>

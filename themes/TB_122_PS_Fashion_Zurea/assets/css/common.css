@@ -904,7 +904,7 @@ img{
 	position: absolute;
 	right: 0;
 	z-index: 9;
-	background-color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.9);
 	top: 100%;
 	opacity: 0;
     visibility: hidden;
@@ -918,6 +918,9 @@ img{
 	-webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+}
+.tbcmscart-show-dropdown * {
+	color: white;
 }
 .tbcart-product-content-box {
     margin-bottom: 20px;
@@ -967,7 +970,7 @@ img{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    color: #222222;
+    color: white;
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 400;
@@ -1034,7 +1037,7 @@ img{
 .tbshoping-cart-tax,
 .ttshoping-cart-total {
 	font-size: 16px;
-	color: #222;
+	color: white;
 	font-weight: 600;
 }
 span.tbcart-product-price {
@@ -2048,7 +2051,7 @@ ul.wlp_bought_list li .product_infos .product-name{
 .product-price-and-shipping .price {
 	font-size: 16px;
 	font-weight: 500;
-	color: #222222;
+	color: #329500;
 	vertical-align: middle;
 	letter-spacing: 0;
 	margin-right: 10px;
@@ -2402,7 +2405,7 @@ ul.wlp_bought_list li .product_infos .product-name{
     padding: 0 0 5px 0;
 }
 .tbleft-right-product-slider .product-price-and-shipping .price {
-	color: #111111;
+	color: #329500;
 }
 .tbleft-right-product-slider .product-description {
 	padding-left: 10px;
