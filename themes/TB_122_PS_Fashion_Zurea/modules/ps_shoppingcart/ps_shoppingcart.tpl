@@ -30,13 +30,13 @@
             <div class='tbheader-cart-btn-wrapper'>
                 <a rel="nofollow" href="JavaScript:void(0);" data-url='{$cart_url}' title='{l s="Cart" d="Shop.Theme.Checkout"}'>
                     <div class="tbcart-icon-text-wrapper">
+                        <div class="tb-cart-cart-inner">
+                            <span class="tbcart-lable">{l s='Cart' d='Shop.Theme.Checkout'} ({count($cart.products)})</span> 
+                        </div>
                         <div class="tb-bg-wrapper">
                             <div class="tb-cart-icon tbheader-right-icon">
                                 <i class="material-icons shopping-cart">&#xe8f8;</i>
                             </div> 
-                        </div>
-                        <div class="tb-cart-cart-inner">
-                            <span class="tbcart-lable">{l s='Cart' d='Shop.Theme.Checkout'} ({count($cart.products)})</span> 
                         </div>
                     </div>
                 </a>
