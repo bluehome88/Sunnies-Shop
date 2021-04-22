@@ -2363,6 +2363,8 @@ input {
 	line-height: 60px;
 	margin-right: 20px;
 	float: left;
+	font-size: 16px;
+	font-weight: bold;
 }
 .tbheader-offer-wrapper-outer .tb-nav-text.first{
 	color: #0dab8d;
@@ -2448,4 +2450,18 @@ input {
 	color: #0dab8d;
 	font-size: 36px;
 	font-weight: normal;
+}
+.tbcmsmain-menu-wrapper .tb-header-menu[data-depth="0"] > li > .tbmenu-link-wrapper a span{
+	font-weight: bold;
+}
+.page-my-account #content .links a i{
+	color: #FD7E00
+}
+.tb-product-page-add-to-cart-wrapper .tbproduct-wishlist,
+.tb-product-page-add-to-cart-wrapper .tbcompare-wrapper{
+	display: none;
+}
+.tbproduct-wrapper .tbproduct-hover-btn{
+	top: inherit;
+	bottom: 0;
 }
