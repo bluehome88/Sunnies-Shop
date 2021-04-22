@@ -54,6 +54,7 @@
 						</div>
 					</div>
 					<div class='tbheader-account-wrapper col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-12'>
+						<a href="{url entity='Contact Us'}">Help Desk</a>
 						<div class="tbcms-header-myaccount">
 							<div class="tb-header-account">
 								<div class="tb-account-wrapper">

@@ -2465,3 +2465,17 @@ input {
 	top: inherit;
 	bottom: 0;
 }
+.checkout-step span.form-control-comment{
+	display: none;
+}
+.cart-summary .cart-detailed-totals{
+	font-weight: bold;
+}
+.tbprocess-to-checkout{
+	background-color: #329500;
+	border: 1px solid #329500;
+}
+.tbprocess-to-checkout:hover{
+	background-color: #329550 !important;
+	border: 1px solid #329550 !important;
+}
