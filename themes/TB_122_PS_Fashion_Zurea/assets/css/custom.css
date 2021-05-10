@@ -2387,7 +2387,7 @@ input {
 	background-repeat: no-repeat;
 }
 .tb-category-block-wrapper #category-description{
-	max-width: 50%;
+	/* max-width: 50%; */
 }
 
 .tbcmsheader-sticky .tbheader-account-wrapper,
@@ -2485,4 +2485,37 @@ input {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
+}
+.tbprduct-image-info-wrapper .tb-product-page-content h1{
+	font-size: 30px;
+}
+
+/* --- responsive --- */
+@media (max-width: 991px) {
+	#blockcart-modal .modal-body .divide-right span{
+		display: none;
+	}
+	#blockcart-modal .modal-body .divide-right br{
+		display: none;
+	}
+}
+
+.tbproduct-cart-btn .tbproduct-add-to-cart{
+	background: #666666;
+}
+.tbproduct-cart-btn .tbproduct-add-to-cart span{
+	color: white !important;
+}
+@media (max-width: 575px) {
+	#product .product-actions button.add-to-cart{
+		position: fixed;
+	    bottom: 0;
+	    width: 100%;
+	    left: 0;
+	    opacity: 0.9;
+	    transition: all 0.5s;
+	}
+	#product .product-actions button.add-to-cart:hover{
+		opacity: 1;
+	}
 }
