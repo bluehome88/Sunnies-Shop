@@ -295,7 +295,11 @@
       {block name='product_footer'}
         {hook h='displayFooterProduct' product=$product category=$category}
       {/block}
-
+      <script>
+        var cat_bg = "{$category_image}";
+        if( cat_bg )
+          document.getElementsByClassName("breadcrumb")[0].style.backgroundImage = "url('"+cat_bg+"')";
+      </script>
       {block name='product_images_modal'}
         {include file='catalog/_partials/product-images-modal.tpl'}
       {/block}
