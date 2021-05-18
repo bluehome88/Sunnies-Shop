@@ -2549,3 +2549,6 @@ input {
 .tb-category-main-div .tb-category-image{
 	display: none;
 }
+.tbcmstbcmstwoofferbanners .products button{
+	display: none;
+}

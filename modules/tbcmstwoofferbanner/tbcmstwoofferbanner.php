@@ -28,6 +28,15 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 
+use PrestaShop\PrestaShop\Adapter\Category\CategoryProductSearchProvider;
+use PrestaShop\PrestaShop\Adapter\Image\ImageRetriever;
+use PrestaShop\PrestaShop\Adapter\Product\PriceFormatter;
+use PrestaShop\PrestaShop\Core\Product\ProductListingPresenter;
+use PrestaShop\PrestaShop\Adapter\Product\ProductColorsRetriever;
+use PrestaShop\PrestaShop\Core\Product\Search\ProductSearchContext;
+use PrestaShop\PrestaShop\Core\Product\Search\ProductSearchQuery;
+use PrestaShop\PrestaShop\Core\Product\Search\SortOrder;
+
 include_once('classes/tbcmstwoofferbanner_image_upload.class.php');
 
 class TbcmsTwoOfferBanner extends Module
@@ -508,6 +517,12 @@ class TbcmsTwoOfferBanner extends Module
             $this->context->smarty->assign('language_id', $id_lang);
             $this->context->smarty->assign('data', $data);
 
+            // add special products
+            $products = $this->getFrontendProductInformation(1);
+            $this->context->smarty->assign("product1", $products[0]);
+            $products = $this->getFrontendProductInformation(117);
+            $this->context->smarty->assign("product2", $products[0]);
+
             $path = _MODULE_DIR_.$this->name."/views/img/";
             $this->context->smarty->assign("path", $path);
 
@@ -516,5 +531,60 @@ class TbcmsTwoOfferBanner extends Module
         }
 
         return Cache::retrieve('tbcmstwoofferbanner_display_home.tpl');
+    }
+
+    public function getFrontendProductInformation($id_category)
+    {
+        // set default category Home
+        $category = new Category((int)$id_category);
+
+        // create new product search proider
+        $searchProvider = new CategoryProductSearchProvider(
+            $this->context->getTranslator(),
+            $category
+        );
+
+        // set actual context
+        $context = new ProductSearchContext($this->context);
+        
+        // create new search query
+        $query = new ProductSearchQuery();
+        $query
+            ->setResultsPerPage(1)
+            ->setPage(1)
+        ;
+        
+        $result = $searchProvider->runQuery(
+            $context,
+            $query
+        );
+
+        // Product handling - to get relevant data
+        $assembler = new ProductAssembler($this->context);
+        $presenterFactory = new ProductPresenterFactory($this->context);
+        $presentationSettings = $presenterFactory->getPresentationSettings();
+        $presenter = new ProductListingPresenter(
+            new ImageRetriever(
+                $this->context->link
+            ),
+            $this->context->link,
+            new PriceFormatter(),
+            new ProductColorsRetriever(),
+            $this->context->getTranslator()
+        );
+
+        $products = array();
+        foreach ($result->getProducts() as $rawProduct) {
+            $productId = $rawProduct['id_product'];
+            
+                $product = $presenter->present(
+                    $presentationSettings,
+                    $assembler->assembleProduct($rawProduct),
+                    $this->context->language
+                );
+                array_push($products, $product);
+        }
+
+        return $products;
     }
 }

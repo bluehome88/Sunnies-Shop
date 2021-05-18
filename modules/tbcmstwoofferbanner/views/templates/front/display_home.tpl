@@ -27,7 +27,15 @@
 <div class="tbcmstwoofferbanners-one container-fluid bottom-to-top hb-animate-element">
     <div class="tbcmstbcmstwoofferbanners container">
     	<div class="tbbanner-wrapper tbone-banner-wrapper-info row">
-        	<div class="tbbanner1 col-md-6 col-sm-6 col-xs-12">
+            <div class="tbcmsmain-title-wrapper clearfix">
+                <div class="tbcms-main-title">
+                    <div class="tbmain-title">
+                        <h2>Trending Sunglasses</h2>
+                        {* <p>Vintage and Rounded Sunglasses are a sure thing this year</p> *}
+                    </div>
+                </div>
+            </div>
+        	<div class="tbbanner1 col-md-3 col-sm-6 col-xs-12">
                 <div class="tbofferbanner-two-inner">
                     <a href="{$data['TBCMSTWOOFFERBANNER_LINK']}" {* title="{$data['TBCMSTWOOFFERBANNER_CAPTION'][$language_id]}" *} class="tbbanner-hover-wrapper">
                         <img src="{$path}tiny/{$data['TBCMSTWOOFFERBANNER_IMAGE_NAME']}" data-org-src="{$path}{$data['TBCMSTWOOFFERBANNER_IMAGE_NAME']}" class="tbimage-lazy img-responsive" alt="{l s='Offer Banner' mod='tbcmstwoofferbanner'}" />
@@ -40,8 +48,10 @@
                     {/if}
                 </div>
             </div>
-
-            <div class="tbbanner2 col-md-6 col-sm-6 col-xs-12">
+            <div class="products col-md-3 col-sm-6 col-xs-12">
+                {include file='catalog/_partials/miniatures/product-grid-view.tpl' class_name='grid'  product=$product1 image_size='home_default'}
+            </div>
+            <div class="tbbanner2 col-md-3 col-sm-6 col-xs-12">
                 <div class="tbofferbanner-two-inner">
                     <a href="{$data['TBCMSTWOOFFERBANNER_LINK_2']}" {* title="{$data['TBCMSTWOOFFERBANNER_CAPTION_2'][$language_id]}" *} class="tbbanner-hover-wrapper">
                         <img src="{$path}tiny/{$data['TBCMSTWOOFFERBANNER_IMAGE_NAME_2']}" data-org-src="{$path}{$data['TBCMSTWOOFFERBANNER_IMAGE_NAME_2']}" class="tbimage-lazy img-responsive" alt="{l s='Offer Banner' mod='tbcmstwoofferbanner'}" />
@@ -53,6 +63,9 @@
                         </div>
                     {/if}
                 </div>
+            </div>
+            <div class="products col-md-3 col-sm-6 col-xs-12">
+                {include file='catalog/_partials/miniatures/product-grid-view.tpl' class_name='grid'  product=$product2 image_size='home_default'}
             </div>
         </div>
     </div>
