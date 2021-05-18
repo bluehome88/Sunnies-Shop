@@ -189,6 +189,20 @@ class CategoryControllerCore extends ProductListingFrontController
             $this->category->id_image
         );
 
+        if( !$category['image'] ){
+            $idLang = (int) Context::getContext()->language->id;
+            foreach ($this->category->getAllParents() as $p_category) {
+                $p_category = new Category( $p_category->id, $idLang);
+                $image = $this->getImage(
+                    $p_category,
+                    $p_category->id_image
+                );
+
+                if( $image )
+                    $category['image'] = $image;
+            }
+        }
+
         return $category;
     }
 
