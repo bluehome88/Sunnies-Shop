@@ -58,7 +58,18 @@
             </a>
         </div>
     </div>
-
+    <div class="mobile_links tbfooter-logo-link-wrapper">
+        <div class="row">
+            <div class="col-sm-6 col-xs-6 hidden-sm-up">
+                <a href="{url entity='cms' id='3'}">Terms & Conditions</a>
+                <a href="{url entity='cms' id='4'}">About Us</a>
+            </div>
+            <div class="col-sm-6 col-xs-6 hidden-sm-up">
+                <a href="{url entity='cms' id='11'}">Wholesale</a>
+                <a href="{$link->getPageLink('contact')}">Customer Service</a>
+            </div>
+        </div>
+    </div>
     <div class="tbfooter-copy-payment-icon-wrapper bottom-to-top hb-animate-element">
         <div class="container tbfooter-copy-payment-icon-content">
             <div class="row tbfooter-copy-payment-icon-inner">

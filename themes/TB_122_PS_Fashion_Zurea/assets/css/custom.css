@@ -2552,3 +2552,9 @@ input {
 .tbcmstbcmstwoofferbanners .products button{
 	display: none;
 }
+.tbfooter-logo-link-wrapper.mobile_links a{
+	color: white;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
