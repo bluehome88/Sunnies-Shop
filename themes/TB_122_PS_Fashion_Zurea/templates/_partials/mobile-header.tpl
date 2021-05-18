@@ -32,8 +32,9 @@
 	<div class="tbcmsmobile-header-center col-sm-4 col-xs-12">
 		<div id='tbcmsmobile-header-logo'></div>
 	</div>
-	
-	<div id="tbcmsmobile-header-right" class="col-sm-4 col-xs-8"></div>
-	
+	<div id="tbcmsmobile-header-right" class="col-sm-1 col-xs-4"></div>
+	<div class='tbheader-account-wrapper col-sm-3 col-xs-4'>
+		{hook h='displayNavShoppingCartBlock'}
+	</div>	
 </div>
 {/strip}
