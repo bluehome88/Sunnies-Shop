@@ -773,7 +773,7 @@ $(window).load(function(){
 		if (document.body.clientWidth <= 575) {
 	 		$('.tbcmsmobile-header-center').insertBefore('.tbcmsmobile-header-left');
 	 	} else {
-	 		$('.tbcmsmobile-header-center').insertAfter('.tbcmsmobile-header-left');
+	 		$('.tbcmsmobile-header-center').insertAfter('.tbcmsmobile-header-right');
 	 	}
 	}
 

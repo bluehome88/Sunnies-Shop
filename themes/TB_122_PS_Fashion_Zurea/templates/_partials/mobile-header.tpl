@@ -26,14 +26,33 @@
 {strip}
 <div id='tbcms-mobile-view-header' class="hidden-lg-up">
 
-	<div class="tbcmsmobile-header-left col-sm-4 col-xs-4">
+	<div class="tbcmsmobile-header-left col-sm-2 col-xs-3">
 		<div id='tbcmsmobile-horizontal-menu'></div>
 	</div>
+	<div id="tbcmsmobile-header-right" class="col-sm-2 col-xs-3"></div>
+
 	<div class="tbcmsmobile-header-center col-sm-4 col-xs-12">
 		<div id='tbcmsmobile-header-logo'></div>
 	</div>
-	<div id="tbcmsmobile-header-right" class="col-sm-1 col-xs-4"></div>
-	<div class='tbheader-account-wrapper col-sm-3 col-xs-4'>
+
+	<div class='tbheader-account-wrapper col-sm-2 col-xs-3'>
+		<div class="tbcms-header-myaccount">
+			<div class="tb-header-account">
+				<div class="tb-account-wrapper">
+					<button class="btn-unstyle tb-myaccount-btn">
+						{* <span>{l s='My Account' d='Shop.Theme.Catalog'}</span> *}
+						<i class='material-icons'>&#xe7ff;</i>
+					</button>
+					<ul class="dropdown-menu tb-account-dropdown tb-dropdown">
+						<li>{hook h='displayNavWishlistBlock'}</li>
+						<li>{hook h='displayNavProductCompareBlock'}</li>
+						<li>{hook h='displayNavCustomerSignInBlock'}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='tbheader-account-wrapper col-sm-2 col-xs-3'>
 		{hook h='displayNavShoppingCartBlock'}
 	</div>	
 </div>
