@@ -2561,3 +2561,6 @@ input {
 .tb-search-account-cart-wrapper{
 	text-align: left;
 }
+.product-price-and-shipping .regular-price{
+	display: none;
+}

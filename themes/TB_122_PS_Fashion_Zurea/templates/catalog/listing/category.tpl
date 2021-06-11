@@ -63,7 +63,7 @@
 					<div class="tb-category-image">
 						<a href="{$link->getCategoryLink($category.id_category, $category.link_rewrite)|escape:'html':'UTF-8'}" title="{$category.name|escape:'html':'UTF-8'}" class="img">              
 							{$tmp = {url entity='categoryImage' id=$category.id_category name='category_default'}}
-							{if !file_exists({$tmp})}
+							{if file_exists({$tmp})}
 								<img class="replace-2x" src="{$tmp}" alt="{$category.name|escape:'html':'UTF-8'}"  />
 							{/if}
 						</a>
