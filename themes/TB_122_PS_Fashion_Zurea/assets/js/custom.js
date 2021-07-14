@@ -907,4 +907,11 @@ $(window).load(function(){
 		$('.tbcmsspecial-product .tbproduct-wrapper').balance();
 		$('#products.grid .tbgrid-list-view-product .tbproduct-wrapper.grid').balance();
 
+		if ( $( "#cart" ).length )
+		{
+		    // setTimeout( function(){ 
+		        console.log( "loading spinner hidden");
+                $(".tbcms-loading-overlay").toggle().delay(2000);
+            // }  , 2000 )
+		}
 	});
