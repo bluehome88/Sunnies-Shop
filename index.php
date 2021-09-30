@@ -24,5 +24,5 @@
  * @license   https://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
  */
 
-require dirname(__FILE__) . '/config/config.inc.php';
+require dirname(__FILE__).'/config/config.inc.php';
 Dispatcher::getInstance()->dispatch();

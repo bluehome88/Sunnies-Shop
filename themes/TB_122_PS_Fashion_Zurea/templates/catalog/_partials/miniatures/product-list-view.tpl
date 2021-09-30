@@ -24,13 +24,6 @@
  *}
 {strip}
 <div class="tbproduct-wrapper list">
-    <div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
-        <meta itemprop="url" content="{$product.url}" />pr
-        <meta itemprop="product_name" content="{$product.name}" />
-        {assign var='priceVar' value=$product.price}
-        <meta itemprop="price" content="{$priceVar|replace:'$':''}"/>
-    </div>
-
 	{block name='product_thumbnail'}
 		<div class="tbproduct-image col-sm-3">
 			{if $product.cover}
@@ -70,7 +63,7 @@
 			{block name='product_name'}
 				<div class="tbproduct-name">
 					<div class="product-title">
-						<a href="{$product.url}"><h6 itemprop="name">{$product.name}</h6></a>
+						<a href="{$product.url}"><h6>{$product.name}</h6></a>
 					</div>
 					<div class="tbproduct-cat-name">{$product.category_name}</div>
 				</div>
@@ -82,7 +75,7 @@
 				<div class="tb-product-price">
 					{if $product.show_price}
 						<div class="product-price-and-shipping">
-							<span class="price">{$product.price}</span>
+							<span itemprop="price" class="price">{$product.price}</span>
 							{if $product.has_discount}
 								<span class="regular-price">{$product.regular_price}</span>
 								{hook h='displayProductPriceBlock' product=$product type="old_price"}

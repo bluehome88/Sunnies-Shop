@@ -24,7 +24,7 @@
 */
 $(document).ready(function(){
     $(document).on('click','.tbcmscookies-notice .close-cookie', function(){
-        $.cookie("cokkie_set", 'true');
+        // $.cookie("cokkie_set", 'true');
         $('.tbcmscookies-notice').fadeOut('500');
     });
 });
