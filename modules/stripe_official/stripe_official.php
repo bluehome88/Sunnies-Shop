@@ -107,6 +107,7 @@ class Stripe_official extends PaymentModule
         'StripePaymentIntent',
         'StripeCapture',
         'StripeCustomer',
+        'StripeIdempotencyKey',
     );
 
     /**
@@ -391,7 +392,7 @@ class Stripe_official extends PaymentModule
     {
         $this->name = 'stripe_official';
         $this->tab = 'payments_gateways';
-        $this->version = '2.3.0';
+        $this->version = '2.3.1';
         $this->author = '202 ecommerce';
         $this->bootstrap = true;
         $this->display = 'view';

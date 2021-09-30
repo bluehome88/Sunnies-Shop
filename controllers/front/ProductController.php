@@ -373,6 +373,14 @@ class ProductControllerCore extends ProductPresentingFrontControllerCore
             }
 
             $productBrandUrl = $this->context->link->getManufacturerLink($productManufacturer->id);
+// ----- custom code by bluetome88 ------- //
+// set product page banner image by category
+$retriever = new ImageRetriever(
+    $this->context->link
+);
+$cat_image =  $retriever->getImage($this->category, $this->category->id_image);
+if( isset($cat_image['large']))
+    $cat_image = $cat_image['large']['url'];
 
             $this->context->smarty->assign([
                 'priceDisplay' => $priceDisplay,
@@ -385,6 +393,7 @@ class ProductControllerCore extends ProductPresentingFrontControllerCore
                 'product_manufacturer' => $productManufacturer,
                 'manufacturer_image_url' => $manufacturerImageUrl,
                 'product_brand_url' => $productBrandUrl,
+                'category_image' => $cat_image,
             ]);
 
             // Assign attribute groups to the template

@@ -128,7 +128,7 @@
               </span>
             </div>
             <div class="condition-label">
-              <label class="js-terms" for="conditions_to_approve[{$condition_name}]">
+              <label class="" for="conditions_to_approve[{$condition_name}]">
                 {$condition nofilter}
               </label>
             </div>
