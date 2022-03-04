@@ -165,7 +165,7 @@ class LinkCore
         if (empty($ipa)) {
             $ipa = null;
         }
-        $params['id_product_attribute'] = $ipa;
+        $params['id_product_attribute'] = null;//$ipa;
         if (!$alias) {
             $product = $this->getProductObject($product, $idLang, $idShop);
         }
@@ -231,6 +231,7 @@ class LinkCore
             $product = $this->getProductObject($product, $idLang, $idShop);
         }
         $anchor = $ipa ? $product->getAnchor((int) $ipa, (bool) $addAnchor) : '';
+        $anchor = '';
 
         return $url . $dispatcher->createUrl('product_rule', $idLang, array_merge($params, $extraParams), $force_routes, $anchor, $idShop);
     }
