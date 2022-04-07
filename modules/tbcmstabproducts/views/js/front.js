@@ -54,6 +54,7 @@ $(window).load(function(){
 /********************** End Tab js *****************************/
 
 /****************** Start Tab Product Slider Js *******************************************/
+if( $('#index').length ){
 var owlClass = [
   //['slider className','navigation nextClass','navigation prevClass']
   ['.tbtab-featured-product .tbproduct-wrapper-content-box','.tbtab-featured-product-next','.tbtab-featured-product-prev'],
@@ -292,7 +293,7 @@ var sideSlider = [
       $(set_trigger).find('.owl-nav .owl-prev').trigger('click');
     });
   }
-
+}
 /****************** End Single Product Sliders Js *******************************************/
 
 
