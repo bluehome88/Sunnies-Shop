@@ -13925,7 +13925,8 @@ data-toggle[tooltip] {
 
 .modal-dialog .product-cover {
     margin-bottom: 0;
-    width: 80%
+    width: 80%;
+    height: 100%;
 }
 
 .js-productinfo {
@@ -14677,7 +14678,7 @@ body#checkout.lang-rtl div.checkout-step .custom-radio {
 
 .quickview .product-cover img {
     width: 100%;
-    height: 100%
+    /*height: 100%*/
 }
 
 .quickview .arrows .material-icons,
