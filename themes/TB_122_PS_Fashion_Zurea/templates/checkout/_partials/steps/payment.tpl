@@ -122,7 +122,8 @@
                         type  = "checkbox"
                         value = "1"
                         class = "ps-shown-by-js"
-                        required
+                        checked="checked"
+                        required                        
                 >
                 <span><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
               </span>
