@@ -25,7 +25,7 @@
 *}
 
 {strip}
-<div class="tab-pane fade{if !$product.description} in active{/if}"
+<div class="tab-pane fade in active"
      id="product-details"
      data-product="{$product.embedded_attributes|json_encode}"
      role="tabpanel"
@@ -64,10 +64,10 @@
 
   {block name='product_availability_date'}
     {if $product.availability_date}
-      <div class="product-availability-date">
+      <!--div class="product-availability-date">
         <label>{l s='Availability date:' d='Shop.Theme.Catalog'} </label>
         <span>{$product.availability_date}</span>
-      </div>
+      </div-->
     {/if}
   {/block}
 
@@ -94,7 +94,7 @@
   {* if product have specific references, a table will be added to product details section *}
   {block name='product_specific_references'}
     {if isset($product.specific_references)}
-      <div class="product-features">
+      <!--div class="product-features">
         <p class="h6">{l s='Specific References' d='Shop.Theme.Catalog'}</p>
           <dl class="data-sheet">
             {foreach from=$product.specific_references item=reference key=key}
@@ -102,7 +102,7 @@
               <dd class="value">{$reference}</dd>
             {/foreach}
           </dl>
-      </div>
+      </div-->
     {/if}
   {/block}
 

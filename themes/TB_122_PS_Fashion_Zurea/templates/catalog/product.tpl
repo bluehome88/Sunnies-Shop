@@ -181,15 +181,14 @@
         {block name='product_tabs'}
           <div class="tabs tbproduct-description-tab">
             <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#product-details" role="tab" aria-controls="product-details" aria-selected="true">{l s='Product Details' d='Shop.Theme.Catalog'}</a>
+              </li>
               {if $product.description}
                 <li class="nav-item">
-                   <a class="nav-link{if $product.description} active{/if}" data-toggle="tab" href="#description" role="tab" aria-controls="description" {if $product.description} aria-selected="true"{/if}>{l s='Description' d='Shop.Theme.Catalog'}</a>
+                   <a class="nav-link" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="false">{l s='Description' d='Shop.Theme.Catalog'}</a>
                 </li>
               {/if}
-              <li class="nav-item">
-                <a class="nav-link{if !$product.description} active{/if}" data-toggle="tab" href="#product-details" role="tab" aria-controls="product-details" {if !$product.description} aria-selected="true"{/if}>{l s='Product Details' d='Shop.Theme.Catalog'}</a>
-              </li>
-              
 
               {if $product.attachments}
                 <li class="nav-item">
@@ -208,16 +207,15 @@
             </ul>
 
             <div class="tab-content" id="tab-content">
-              <div class="tab-pane fade in {if $product.description} active{/if}" id="description" role="tabpanel">
+              {block name='product_details'}
+                {include file='catalog/_partials/product-details.tpl'}
+              {/block}
+
+              <div class="tab-pane fade in" id="description" role="tabpanel">
                 {block name='product_description'}
                   <div class="product-description">{$product.description nofilter}</div>
                 {/block}
               </div>
-
-              {block name='product_details'}
-                {include file='catalog/_partials/product-details.tpl'}
-              {/block}
-             
 
               {block name='product_attachments'}
                 {if $product.attachments}
