@@ -63,7 +63,7 @@
 			{block name='product_name'}
 				<div class="tbproduct-name">
 					<div class="product-title">
-						<a href="{$product.url}"><h6>{$product.name}</h6></a>
+						<a href="{$product.url}"><h6 itemprop="name">{$product.name}</h6></a>
 					</div>
 					<div class="tbproduct-cat-name">{$product.category_name}</div>
 				</div>
@@ -74,8 +74,12 @@
 			{block name='product_price_and_shipping'}
 				<div class="tb-product-price">
 					{if $product.show_price}
-						<div class="product-price-and-shipping">
-							<span itemprop="price" class="price">{$product.price}</span>
+						<div class="product-price-and-shipping" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+							<span class="price">{$product.price}</span>
+							{assign var='priceVar' value=$product.price}
+							<meta itemprop="price" content="{$priceVar|replace:'$':''}"/>
+							<meta itemprop="priceCurrency" content="AUD" />
+
 							{if $product.has_discount}
 								<span class="regular-price">{$product.regular_price}</span>
 								{hook h='displayProductPriceBlock' product=$product type="old_price"}

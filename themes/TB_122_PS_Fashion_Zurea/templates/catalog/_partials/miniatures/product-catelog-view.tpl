@@ -100,7 +100,10 @@
 				<div class="tb-product-price">
 					{if $product.show_price}
 						<div class="product-price-and-shipping">
-							<span itemprop="price" class="price">{$product.price}</span>
+							<span class="price">{$product.price}</span>
+							{assign var='priceVar' value=$product.price}
+							<meta itemprop="price" content="{$priceVar|replace:'$':''}"/>
+							<meta itemprop="priceCurrency" content="AUD" />
 							{if $product.has_discount}
 								<span class="regular-price">{$product.regular_price}</span>
 								{hook h='displayProductPriceBlock' product=$product type="old_price"}
