@@ -8140,7 +8140,8 @@ body#checkout div.checkout-step #conditions-to-approve {
 }
 
 body#checkout div.checkout-step .payment-options label {
-    display: table-cell
+    display: table-cell;
+    text-align: left;
 }
 
 body#checkout div.checkout-step .payment-options .custom-radio {
@@ -10849,9 +10850,15 @@ body#checkout div.checkout-step .edit-address {
     float: right
 }
 
+#js-checkout-summary .cart-summary-products p{
+    font-weight: 600;
+}
+
 .cart-summary-line.cart-summary-subtotals .label,
-.cart-summary-line.cart-summary-subtotals .value {
-    font-weight: 400
+.cart-summary-line.cart-summary-subtotals .value,
+.cart-summary-line.cart-total .label,
+.cart-summary-line.cart-total .value{
+    font-weight: 600
 }
 
 .cart-grid-body {
