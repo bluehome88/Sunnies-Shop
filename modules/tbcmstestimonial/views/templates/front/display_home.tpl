@@ -39,7 +39,7 @@
                     <div class="item tbtestimonial-wrapper-info">
                         <div class="tbtestimonial-inner-content-box">
                             <div class="tbtestimonial-img-block">
-                                <img src='{$dis_arr_result["path"]}{$data["image"]}' style='width:100px' />
+                                <img src='{$dis_arr_result["path"]}{$data["image"]}' style='width:100px' alt="{$data['title']}"/>
                             </div>
                             <div class="tbtestimonial-dec">{$data['description']}</div>
                             <div class='tbtestimonial-info-box'>
