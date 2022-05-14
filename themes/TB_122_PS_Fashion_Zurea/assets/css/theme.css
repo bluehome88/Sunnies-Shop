@@ -10914,14 +10914,18 @@ body#checkout div.checkout-step .edit-address {
 .block-promo .promo-input {
     color: #232323;
     border: 1px solid #7a7a7a;
-    height: 2.5rem;
+    height: 2.3rem;
     text-indent: .625rem;
-    width: 60%
+    width: 60%;
+    margin-right: 10px;
 }
 
 .block-promo .promo-input+button {
     margin-top: -4px;
-    text-transform: capitalize
+    text-transform: capitalize;
+    background: #6f6f6f;
+    border: 1px solid;
+    border-color: #666666 #5f5f5f #292929 #5f5f5f;
 }
 
 .block-promo .cart-summary-line .label,

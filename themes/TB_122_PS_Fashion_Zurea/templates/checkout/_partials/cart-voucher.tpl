@@ -43,19 +43,19 @@
           {/block}
         {/if}
 
-        <p>
+        <!--p>
           <a class="collapse-button promo-code-button" data-toggle="collapse" href="#promo-code" aria-expanded="false" aria-controls="promo-code">
             {l s='Have a promo code?' d='Shop.Theme.Checkout'}
           </a>
-        </p>
+        </p-->
 
-        <div class="promo-code collapse{if $cart.discounts|count > 0} in{/if}" id="promo-code">
+        <div class="promo-code collapse in" id="promo-code">
           {block name='cart_voucher_form'}
             <form action="{$urls.pages.cart}" data-link-action="add-voucher" method="post">
               <input type="hidden" name="token" value="{$static_token}">
               <input type="hidden" name="addDiscount" value="1">
               <input class="promo-input" type="text" name="discount_name" placeholder="{l s='Promo code' d='Shop.Theme.Checkout'}">
-              <button type="submit" class="btn btn-primary"><span>{l s='Add' d='Shop.Theme.Actions'}</span></button>
+              <button type="submit" class="btn btn-primary"><span>{l s='Apply' d='Shop.Theme.Actions'}</span></button>
             </form>
           {/block}
 
