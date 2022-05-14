@@ -2534,6 +2534,16 @@ input {
 		background-position: -7px -654px;
 	}
 }
+#checkout-delivery-step .btn-primary,
+#checkout-addresses-step .btn-primary{
+	background: #329500;
+	border: 1px solid #329500;
+}
+#checkout-delivery-step .btn-primary:hover,
+#checkout-addresses-step .btn-primary:hover{
+	background-color: #329550 !important;
+	border: 1px solid #329550 !important;
+}
 #payment-confirmation .btn-primary{
 	background: #329500;
 	border: 1px solid #329500;
