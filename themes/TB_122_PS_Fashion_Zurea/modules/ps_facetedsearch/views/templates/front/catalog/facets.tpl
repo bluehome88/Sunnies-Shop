@@ -101,9 +101,7 @@
 
                           <a
                             href="{$filter.nextEncodedFacetsURL}"
-                            class="_gray-darker search-link js-search-link"
-                            rel="nofollow"
-                          >
+                            class="_gray-darker search-link js-search-link" >
                             {$filter.label}
                             {if $filter.magnitude and $show_quantities}
                               <span class="magnitude">({$filter.magnitude})</span>
@@ -120,7 +118,7 @@
                   <ul id="facet_{$_expand_id}" class="collapse{if !$_collapse} in{/if}">
                     <li>
                       <div class="col-sm-12 col-xs-12 col-md-12 facet-dropdown dropdown">
-                        <a class="select-title" rel="nofollow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="select-title" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           {$active_found = false}
                           <span>
                             {foreach from=$facet.filters item="filter"}
@@ -142,7 +140,6 @@
                           {foreach from=$facet.filters item="filter"}
                             {if !$filter.active}
                               <a
-                                rel="nofollow"
                                 href="{$filter.nextEncodedFacetsURL}"
                                 class="select-list"
                               >

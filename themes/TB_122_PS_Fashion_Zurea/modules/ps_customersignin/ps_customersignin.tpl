@@ -32,14 +32,12 @@
         {* <i class="material-icons">&#xE7FF;</i> *}
         {l s='Sign out' d='Shop.Theme.Actions'}
       </a>
-      <a class="account tbhedaer-sign-btn" href="{$my_account_url}" title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}" rel="nofollow"
-      >
+      <a class="account tbhedaer-sign-btn" href="{$my_account_url}" title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}" >
         {* <i class="material-icons hidden-md-up logged">&#xE7FF;</i> *}
         <span class="tbhedaer-sign-span">{$customerName}</span>
       </a>
     {else}
-      <a href="{$my_account_url}" class="tbhedaer-sign-btn" title="{l s='Log in to your customer account' d='Shop.Theme.Customeraccount'}" rel="nofollow"
-      >
+      <a href="{$my_account_url}" class="tbhedaer-sign-btn" title="{l s='Log in to your customer account' d='Shop.Theme.Customeraccount'}">
         {* <i class="material-icons">&#xE7FF;</i> *}
         <span class="tbhedaer-sign-span">{l s='Sign in' d='Shop.Theme.Actions'}</span>
       </a>

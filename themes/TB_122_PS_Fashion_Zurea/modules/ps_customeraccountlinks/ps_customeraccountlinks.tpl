@@ -37,7 +37,7 @@
   <ul id="footer_sub_menu_myaccount" class="collapse account-list">
     {foreach from=$my_account_urls item=my_account_url}
         <li>
-          <a href="{$my_account_url.url}" title="{$my_account_url.title}" rel="nofollow">
+          <a href="{$my_account_url.url}" title="{$my_account_url.title}">
             {$my_account_url.title}
           </a>
         </li>
