@@ -12,6 +12,8 @@ Allow: */modules/*.css
 Allow: */modules/*.js
 Allow: */modules/*.png
 Allow: */modules/*.jpg
+Allow: */modules/*.jpeg
+Allow: */modules/*.svg
 Allow: /js/jquery/*
 # Private pages
 Disallow: /*?order=
@@ -55,27 +57,27 @@ Disallow: /*controller=search
 Disallow: /*controller=statistics
 Disallow: /*controller=attachment
 Disallow: /*controller=guest-tracking
-# Directories for virtualagencystaging.com.au
-Disallow: /newps/app/
-Disallow: /newps/cache/
-Disallow: /newps/classes/
-Disallow: /newps/config/
-Disallow: /newps/controllers/
-Disallow: /newps/download/
-Disallow: /newps/js/
-Disallow: /newps/localization/
-Disallow: /newps/log/
-Disallow: /newps/mails/
-Disallow: /newps/modules/
-Disallow: /newps/override/
-Disallow: /newps/pdf/
-Disallow: /newps/src/
-Disallow: /newps/tools/
-Disallow: /newps/translations/
-Disallow: /newps/upload/
-Disallow: /newps/var/
-Disallow: /newps/vendor/
-Disallow: /newps/webservice/
+# Directories for www.sunnies.com.au
+Disallow: /app/
+Disallow: /cache/
+Disallow: /classes/
+Disallow: /config/
+Disallow: /controllers/
+Disallow: /download/
+Disallow: /js/
+Disallow: /localization/
+Disallow: /log/
+Disallow: /mails/
+Disallow: /modules/
+Disallow: /override/
+Disallow: /pdf/
+Disallow: /src/
+Disallow: /tools/
+Disallow: /translations/
+Disallow: /upload/
+Disallow: /var/
+Disallow: /vendor/
+Disallow: /webservice/
 Disallow: /en/app/
 Disallow: /en/cache/
 Disallow: /en/classes/
@@ -100,15 +102,36 @@ Disallow: /en/webservice/
 Disallow: /*en/password-recovery
 Disallow: /*en/address
 Disallow: /*en/addresses
-Disallow: /*en/login
+Disallow: /*en/authentication
 Disallow: /*en/cart
 Disallow: /*en/discount
 Disallow: /*en/order-history
 Disallow: /*en/identity
 Disallow: /*en/my-account
 Disallow: /*en/order-follow
-Disallow: /*en/credit-slip
+Disallow: /*en/order-slip
 Disallow: /*en/order
 Disallow: /*en/search
 Disallow: /*en/guest-tracking
-Disallow: /*en/order-confirmation
+
+Disallow: /password-recovery
+Disallow: /address
+Disallow: /addresses
+Disallow: /authentication
+Disallow: /cart
+Disallow: /discount
+Disallow: /order-history
+Disallow: /identity
+Disallow: /my-account
+Disallow: /order-follow
+Disallow: /order-slip
+Disallow: /order
+Disallow: /search
+Disallow: /guest-tracking
+Disallow: /module/ps_emailalerts/account
+Disallow: /*?q=
+Disallow: /module/tbcmswishlist/mywishlist
+# Disallow: /*?page=
+
+# Sitemap
+Sitemap: https://www.sunnies.com.au/1_index_sitemap.xml
