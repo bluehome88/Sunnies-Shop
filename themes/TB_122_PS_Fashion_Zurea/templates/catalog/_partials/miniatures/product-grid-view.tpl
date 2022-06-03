@@ -44,7 +44,17 @@
 				<ul class="product-flags tbproduct-online-new-wrapper">
 					{foreach from=$product.flags item=flag}
 						{if $flag.type == 'online-only' || $flag.type == 'new'}
-							<li class="product-flag {$flag.type}">{$flag.label}</li>
+							{if isset($product.category_name) && $product.category_name == "Kids" && $page.page_name =='new-products'}
+								<a class="kids-box" href="{$product.url}">
+									<span class="kids-label badge-label">{l s='Kids'}</span>
+								</a>
+							{else}
+								<a href="{$product.url}" class="{$flag.type}-box">
+									<span class="new-label badge-label">
+										{$flag.label}
+									</span>
+								</a>
+							{/if}
 						{/if}
 					{/foreach}
 				</ul>
