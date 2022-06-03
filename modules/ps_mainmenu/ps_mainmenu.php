@@ -506,7 +506,7 @@ class Ps_MainMenu extends Module implements WidgetInterface
         $node = $this->makeNode([
             'type' => 'cms-category',
             'page_identifier' => 'cms-category-' . $id_cms_category,
-            'label' => $category->name,
+            'label' => str_replace( ' Sunglasses', '', $category->name ),
             'url' => $category->getLink(),
             'children' => array_merge($subCategories, $subPages)
         ]);
@@ -740,7 +740,7 @@ class Ps_MainMenu extends Module implements WidgetInterface
 
             $current = $this->page_name == 'category' && (int)Tools::getValue('id_category') == (int)$category['id_category'];
             $node['current'] = $current;
-            $node['label']   = $category['name'];
+            $node['label']   = str_replace( ' Sunglasses', '', $category['name'] );
             $node['image_urls']  = [];
 
             if (isset($category['children']) && !empty($category['children'])) {
