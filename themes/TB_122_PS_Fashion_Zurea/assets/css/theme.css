@@ -13684,14 +13684,14 @@ data-toggle[tooltip] {
 }
 
 .tbproduct-description-tab .product-description {
-    padding: 15px 0;
+    padding: 10px 0 15px;
     text-align: left
 }
 
 .tbproduct-description-tab .nav-tabs {
     display: block;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: none
 }
 
@@ -14071,7 +14071,7 @@ data-toggle[tooltip] {
 }
 
 .tbproduct-description-tab .product-description {
-    padding: 0
+    /* padding: 0 */
 }
 
 .tbproduct-description-tab .product-description p {

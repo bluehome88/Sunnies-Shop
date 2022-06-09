@@ -185,9 +185,9 @@
                 <a class="nav-link active" data-toggle="tab" href="#product-details" role="tab" aria-controls="product-details" aria-selected="true">{l s='Product Details' d='Shop.Theme.Catalog'}</a>
               </li>
               {if $product.description}
-                <li class="nav-item">
+                <!--li class="nav-item">
                    <a class="nav-link" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="false">{l s='Description' d='Shop.Theme.Catalog'}</a>
-                </li>
+                </li-->
               {/if}
 
               {if $product.attachments}
@@ -209,13 +209,19 @@
             <div class="tab-content" id="tab-content">
               {block name='product_details'}
                 {include file='catalog/_partials/product-details.tpl'}
+                {if $product.description}
+                  <div id="description" role="tabpanel" style="padding-top:20px;">
+                    <p class="h6">{l s='Description' d='Shop.Theme.Catalog'}</p>
+                    <div class="product-description">{$product.description nofilter}</div>
+                  </div>
+                {/if}
               {/block}
 
-              <div class="tab-pane fade in" id="description" role="tabpanel">
+              <!--div class="tab-pane fade in" id="description" role="tabpanel">
                 {block name='product_description'}
                   <div class="product-description">{$product.description nofilter}</div>
                 {/block}
-              </div>
+              </div-->
 
               {block name='product_attachments'}
                 {if $product.attachments}
