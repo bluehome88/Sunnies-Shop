@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+                            <square128x128logo src="https://www.sunnies.com.au/modules/arseopro/uploads/_128x128."/>
+                            <square150x150logo src="https://www.sunnies.com.au/modules/arseopro/uploads/_150x150."/>
+                            <square270x270logo src="https://www.sunnies.com.au/modules/arseopro/uploads/_270x270."/>
+                            <square558x558logo src="https://www.sunnies.com.au/modules/arseopro/uploads/_558x558."/>
+                        <TileColor></TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
