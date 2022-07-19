@@ -55,11 +55,13 @@ $(window).ready(() => {
           imgTarget.each(function () {
             const imgID = $(this).attr('id');
             const imgClass = $(this).attr('class');
+            const altText = $(this).attr('alt');
             let $imgSvg = $svg.clone();
             // Add replaced image's ID to the new SVG
             $imgSvg = typeof imgID !== 'undefined' ? $imgSvg.attr('id', imgID) : $imgSvg;
             // Add replaced image's classes to the new SVG
             $imgSvg = typeof imgClass !== 'undefined' ? $imgSvg.attr('class', `${imgClass} replaced-svg`) : $imgSvg.attr('class', ' replaced-svg');
+            $imgSvg.attr('title', altText ); $imgSvg.attr('alt', altText );
             $imgSvg.removeClass('invisible');
             $(this).replaceWith($imgSvg);
           });
